@@ -1,0 +1,8 @@
+MerriweatherSans-Light.ttf: Copyright (c) 2013-2016, Sorkin Type Co (www.sorkintype.com) with Reserved Font Name 'Merriweather'
+MerriweatherSans-LightItalic.ttf: Copyright (c) 2013-2016, Sorkin Type Co (www.sorkintype.com) with Reserved Font Name 'Merriweather'
+MerriweatherSans-Regular.ttf: Copyright (c) 2013-2016, Sorkin Type Co (www.sorkintype.com) with Reserved Font Name 'Merriweather'
+MerriweatherSans-Italic.ttf: Copyright (c) 2013-2016, Sorkin Type Co (www.sorkintype.com) with Reserved Font Name 'Merriweather'
+MerriweatherSans-Bold.ttf: Copyright (c) 2013-2016, Sorkin Type Co (www.sorkintype.com) with Reserved Font Name 'Merriweather'
+MerriweatherSans-BoldItalic.ttf: Copyright (c) 2013-2016, Sorkin Type Co (www.sorkintype.com) with Reserved Font Name 'Merriweather'
+MerriweatherSans-ExtraBold.ttf: Copyright (c) 2013-2016, Sorkin Type Co (www.sorkintype.com) with Reserved Font Name 'Merriweather'
+MerriweatherSans-ExtraBoldItalic.ttf: Copyright (c) 2013-2016, Sorkin Type Co (www.sorkintype.com) with Reserved Font Name 'Merriweather'

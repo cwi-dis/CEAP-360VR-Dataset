@@ -1,0 +1,1903 @@
+{
+    "Behavior_FixationData": [
+        {
+            "ParticipantID": "P16",
+            "Video_Behavior_FixationData": [
+                {
+                    "VideoID": "V1",
+                    "Fixation": [
+                        {
+                            "StartFrame": 0,
+                            "EndFrame": 24,
+                            "Pitch": 1.889,
+                            "Yaw": -0.169
+                        },
+                        {
+                            "StartFrame": 52,
+                            "EndFrame": 62,
+                            "Pitch": 11.739,
+                            "Yaw": 9.838
+                        },
+                        {
+                            "StartFrame": 193,
+                            "EndFrame": 197,
+                            "Pitch": 3.913,
+                            "Yaw": -179.523
+                        },
+                        {
+                            "StartFrame": 221,
+                            "EndFrame": 225,
+                            "Pitch": 2.68,
+                            "Yaw": 115.167
+                        },
+                        {
+                            "StartFrame": 244,
+                            "EndFrame": 248,
+                            "Pitch": -4.659,
+                            "Yaw": 121.946
+                        },
+                        {
+                            "StartFrame": 289,
+                            "EndFrame": 299,
+                            "Pitch": 0.491,
+                            "Yaw": -154.862
+                        },
+                        {
+                            "StartFrame": 320,
+                            "EndFrame": 328,
+                            "Pitch": 0.285,
+                            "Yaw": -159.647
+                        },
+                        {
+                            "StartFrame": 455,
+                            "EndFrame": 464,
+                            "Pitch": -2.098,
+                            "Yaw": -179.658
+                        },
+                        {
+                            "StartFrame": 594,
+                            "EndFrame": 600,
+                            "Pitch": 5.836,
+                            "Yaw": -8.339
+                        },
+                        {
+                            "StartFrame": 602,
+                            "EndFrame": 606,
+                            "Pitch": 6.266,
+                            "Yaw": -8.498
+                        },
+                        {
+                            "StartFrame": 615,
+                            "EndFrame": 619,
+                            "Pitch": 4.208,
+                            "Yaw": -26.596
+                        },
+                        {
+                            "StartFrame": 693,
+                            "EndFrame": 697,
+                            "Pitch": 6.287,
+                            "Yaw": 53.138
+                        },
+                        {
+                            "StartFrame": 704,
+                            "EndFrame": 708,
+                            "Pitch": 4.453,
+                            "Yaw": 72.126
+                        },
+                        {
+                            "StartFrame": 729,
+                            "EndFrame": 734,
+                            "Pitch": 2.124,
+                            "Yaw": 89.187
+                        },
+                        {
+                            "StartFrame": 751,
+                            "EndFrame": 760,
+                            "Pitch": 3.161,
+                            "Yaw": 88.427
+                        },
+                        {
+                            "StartFrame": 766,
+                            "EndFrame": 772,
+                            "Pitch": 3.706,
+                            "Yaw": 88.197
+                        },
+                        {
+                            "StartFrame": 849,
+                            "EndFrame": 853,
+                            "Pitch": -18.423,
+                            "Yaw": 35.548
+                        },
+                        {
+                            "StartFrame": 963,
+                            "EndFrame": 967,
+                            "Pitch": -10.153,
+                            "Yaw": 122.809
+                        },
+                        {
+                            "StartFrame": 978,
+                            "EndFrame": 986,
+                            "Pitch": -8.79,
+                            "Yaw": 120.223
+                        },
+                        {
+                            "StartFrame": 1186,
+                            "EndFrame": 1190,
+                            "Pitch": 14.472,
+                            "Yaw": -5.712
+                        },
+                        {
+                            "StartFrame": 1201,
+                            "EndFrame": 1208,
+                            "Pitch": 33.151,
+                            "Yaw": -0.363
+                        },
+                        {
+                            "StartFrame": 1213,
+                            "EndFrame": 1220,
+                            "Pitch": 13.395,
+                            "Yaw": -4.931
+                        },
+                        {
+                            "StartFrame": 1234,
+                            "EndFrame": 1247,
+                            "Pitch": 31.744,
+                            "Yaw": 0.856
+                        },
+                        {
+                            "StartFrame": 1284,
+                            "EndFrame": 1294,
+                            "Pitch": 14.911,
+                            "Yaw": 63.043
+                        },
+                        {
+                            "StartFrame": 1296,
+                            "EndFrame": 1304,
+                            "Pitch": 14.801,
+                            "Yaw": 63.047
+                        },
+                        {
+                            "StartFrame": 1366,
+                            "EndFrame": 1370,
+                            "Pitch": 29.074,
+                            "Yaw": 117.344
+                        },
+                        {
+                            "StartFrame": 1414,
+                            "EndFrame": 1418,
+                            "Pitch": 18.65,
+                            "Yaw": 165.682
+                        },
+                        {
+                            "StartFrame": 1486,
+                            "EndFrame": 1493,
+                            "Pitch": 24.117,
+                            "Yaw": 83.886
+                        }
+                    ]
+                },
+                {
+                    "VideoID": "V2",
+                    "Fixation": [
+                        {
+                            "StartFrame": 0,
+                            "EndFrame": 9,
+                            "Pitch": 0.89,
+                            "Yaw": 0.451
+                        },
+                        {
+                            "StartFrame": 25,
+                            "EndFrame": 30,
+                            "Pitch": -2.045,
+                            "Yaw": -4.908
+                        },
+                        {
+                            "StartFrame": 44,
+                            "EndFrame": 49,
+                            "Pitch": 11.298,
+                            "Yaw": 6.704
+                        },
+                        {
+                            "StartFrame": 60,
+                            "EndFrame": 82,
+                            "Pitch": -2.087,
+                            "Yaw": 6.177
+                        },
+                        {
+                            "StartFrame": 88,
+                            "EndFrame": 94,
+                            "Pitch": 3.382,
+                            "Yaw": 8.986
+                        },
+                        {
+                            "StartFrame": 98,
+                            "EndFrame": 109,
+                            "Pitch": -1.338,
+                            "Yaw": 2.611
+                        },
+                        {
+                            "StartFrame": 117,
+                            "EndFrame": 132,
+                            "Pitch": 10.182,
+                            "Yaw": 6.53
+                        },
+                        {
+                            "StartFrame": 137,
+                            "EndFrame": 145,
+                            "Pitch": -5.442,
+                            "Yaw": 0.348
+                        },
+                        {
+                            "StartFrame": 149,
+                            "EndFrame": 180,
+                            "Pitch": -1.828,
+                            "Yaw": -2.359
+                        },
+                        {
+                            "StartFrame": 184,
+                            "EndFrame": 323,
+                            "Pitch": -5.684,
+                            "Yaw": 7.352
+                        },
+                        {
+                            "StartFrame": 330,
+                            "EndFrame": 364,
+                            "Pitch": 11.113,
+                            "Yaw": 7.713
+                        },
+                        {
+                            "StartFrame": 368,
+                            "EndFrame": 377,
+                            "Pitch": -5.892,
+                            "Yaw": 7.594
+                        },
+                        {
+                            "StartFrame": 772,
+                            "EndFrame": 781,
+                            "Pitch": -2.051,
+                            "Yaw": -82.925
+                        },
+                        {
+                            "StartFrame": 785,
+                            "EndFrame": 805,
+                            "Pitch": -16.041,
+                            "Yaw": -89.694
+                        },
+                        {
+                            "StartFrame": 877,
+                            "EndFrame": 888,
+                            "Pitch": -18.036,
+                            "Yaw": 7.307
+                        },
+                        {
+                            "StartFrame": 897,
+                            "EndFrame": 908,
+                            "Pitch": -4.552,
+                            "Yaw": 15.69
+                        },
+                        {
+                            "StartFrame": 937,
+                            "EndFrame": 943,
+                            "Pitch": -13.017,
+                            "Yaw": 11.099
+                        },
+                        {
+                            "StartFrame": 1031,
+                            "EndFrame": 1038,
+                            "Pitch": -7.208,
+                            "Yaw": 98.598
+                        },
+                        {
+                            "StartFrame": 1200,
+                            "EndFrame": 1207,
+                            "Pitch": 58.083,
+                            "Yaw": 48.375
+                        },
+                        {
+                            "StartFrame": 1243,
+                            "EndFrame": 1249,
+                            "Pitch": -8.009,
+                            "Yaw": 38.026
+                        },
+                        {
+                            "StartFrame": 1298,
+                            "EndFrame": 1321,
+                            "Pitch": -5.075,
+                            "Yaw": 143.046
+                        },
+                        {
+                            "StartFrame": 1348,
+                            "EndFrame": 1353,
+                            "Pitch": -15.181,
+                            "Yaw": -178.8
+                        },
+                        {
+                            "StartFrame": 1502,
+                            "EndFrame": 1508,
+                            "Pitch": -2.265,
+                            "Yaw": -11.296
+                        },
+                        {
+                            "StartFrame": 1520,
+                            "EndFrame": 1528,
+                            "Pitch": -3.367,
+                            "Yaw": -35.95
+                        },
+                        {
+                            "StartFrame": 1614,
+                            "EndFrame": 1619,
+                            "Pitch": -1.962,
+                            "Yaw": -94.762
+                        },
+                        {
+                            "StartFrame": 1661,
+                            "EndFrame": 1672,
+                            "Pitch": -3.938,
+                            "Yaw": -43.094
+                        },
+                        {
+                            "StartFrame": 1676,
+                            "EndFrame": 1684,
+                            "Pitch": -3.954,
+                            "Yaw": -43.161
+                        },
+                        {
+                            "StartFrame": 1689,
+                            "EndFrame": 1698,
+                            "Pitch": 5.261,
+                            "Yaw": -47.912
+                        },
+                        {
+                            "StartFrame": 1700,
+                            "EndFrame": 1742,
+                            "Pitch": 5.026,
+                            "Yaw": -47.347
+                        },
+                        {
+                            "StartFrame": 1751,
+                            "EndFrame": 1757,
+                            "Pitch": 0.042,
+                            "Yaw": -56.166
+                        },
+                        {
+                            "StartFrame": 1761,
+                            "EndFrame": 1773,
+                            "Pitch": 0.371,
+                            "Yaw": -56.117
+                        },
+                        {
+                            "StartFrame": 1794,
+                            "EndFrame": 1799,
+                            "Pitch": 0.366,
+                            "Yaw": -97.056
+                        }
+                    ]
+                },
+                {
+                    "VideoID": "V3",
+                    "Fixation": [
+                        {
+                            "StartFrame": 120,
+                            "EndFrame": 125,
+                            "Pitch": 2.242,
+                            "Yaw": 35.234
+                        },
+                        {
+                            "StartFrame": 143,
+                            "EndFrame": 151,
+                            "Pitch": 2.265,
+                            "Yaw": 32.906
+                        },
+                        {
+                            "StartFrame": 199,
+                            "EndFrame": 207,
+                            "Pitch": 2.944,
+                            "Yaw": -67.85
+                        },
+                        {
+                            "StartFrame": 220,
+                            "EndFrame": 240,
+                            "Pitch": 1.518,
+                            "Yaw": -35.534
+                        },
+                        {
+                            "StartFrame": 525,
+                            "EndFrame": 535,
+                            "Pitch": 0.857,
+                            "Yaw": -34.789
+                        },
+                        {
+                            "StartFrame": 537,
+                            "EndFrame": 542,
+                            "Pitch": 0.669,
+                            "Yaw": -33.458
+                        },
+                        {
+                            "StartFrame": 564,
+                            "EndFrame": 569,
+                            "Pitch": 0.952,
+                            "Yaw": -39.673
+                        },
+                        {
+                            "StartFrame": 571,
+                            "EndFrame": 576,
+                            "Pitch": 0.936,
+                            "Yaw": -40.943
+                        },
+                        {
+                            "StartFrame": 604,
+                            "EndFrame": 609,
+                            "Pitch": -3.183,
+                            "Yaw": 11.9
+                        },
+                        {
+                            "StartFrame": 613,
+                            "EndFrame": 621,
+                            "Pitch": -1.561,
+                            "Yaw": 12.976
+                        },
+                        {
+                            "StartFrame": 648,
+                            "EndFrame": 657,
+                            "Pitch": -7.195,
+                            "Yaw": 10.036
+                        },
+                        {
+                            "StartFrame": 756,
+                            "EndFrame": 762,
+                            "Pitch": 5.349,
+                            "Yaw": 2.007
+                        },
+                        {
+                            "StartFrame": 901,
+                            "EndFrame": 907,
+                            "Pitch": 4.876,
+                            "Yaw": 13.618
+                        },
+                        {
+                            "StartFrame": 1000,
+                            "EndFrame": 1005,
+                            "Pitch": -1.065,
+                            "Yaw": -52.722
+                        },
+                        {
+                            "StartFrame": 1033,
+                            "EndFrame": 1038,
+                            "Pitch": 4.222,
+                            "Yaw": 13.879
+                        },
+                        {
+                            "StartFrame": 1045,
+                            "EndFrame": 1050,
+                            "Pitch": 4.22,
+                            "Yaw": 9.962
+                        },
+                        {
+                            "StartFrame": 1084,
+                            "EndFrame": 1096,
+                            "Pitch": 0.139,
+                            "Yaw": 4.594
+                        },
+                        {
+                            "StartFrame": 1128,
+                            "EndFrame": 1133,
+                            "Pitch": -0.791,
+                            "Yaw": 11.775
+                        },
+                        {
+                            "StartFrame": 1139,
+                            "EndFrame": 1153,
+                            "Pitch": 2.639,
+                            "Yaw": 10.42
+                        },
+                        {
+                            "StartFrame": 1169,
+                            "EndFrame": 1174,
+                            "Pitch": 1.155,
+                            "Yaw": 8.08
+                        },
+                        {
+                            "StartFrame": 1178,
+                            "EndFrame": 1183,
+                            "Pitch": 5.119,
+                            "Yaw": 9.46
+                        },
+                        {
+                            "StartFrame": 1186,
+                            "EndFrame": 1198,
+                            "Pitch": 5.605,
+                            "Yaw": 10.513
+                        },
+                        {
+                            "StartFrame": 1201,
+                            "EndFrame": 1207,
+                            "Pitch": 5.82,
+                            "Yaw": 10.96
+                        },
+                        {
+                            "StartFrame": 1241,
+                            "EndFrame": 1255,
+                            "Pitch": 3.211,
+                            "Yaw": -2.02
+                        },
+                        {
+                            "StartFrame": 1301,
+                            "EndFrame": 1313,
+                            "Pitch": 2.609,
+                            "Yaw": 7.245
+                        },
+                        {
+                            "StartFrame": 1329,
+                            "EndFrame": 1334,
+                            "Pitch": -4.233,
+                            "Yaw": 15.289
+                        },
+                        {
+                            "StartFrame": 1344,
+                            "EndFrame": 1353,
+                            "Pitch": -2.453,
+                            "Yaw": 30.709
+                        },
+                        {
+                            "StartFrame": 1364,
+                            "EndFrame": 1381,
+                            "Pitch": -3.494,
+                            "Yaw": 8.08
+                        },
+                        {
+                            "StartFrame": 1419,
+                            "EndFrame": 1429,
+                            "Pitch": -6.141,
+                            "Yaw": 40.079
+                        },
+                        {
+                            "StartFrame": 1433,
+                            "EndFrame": 1438,
+                            "Pitch": -6.444,
+                            "Yaw": 40.02
+                        },
+                        {
+                            "StartFrame": 1455,
+                            "EndFrame": 1463,
+                            "Pitch": -7.177,
+                            "Yaw": 34.481
+                        },
+                        {
+                            "StartFrame": 1499,
+                            "EndFrame": 1508,
+                            "Pitch": -3.225,
+                            "Yaw": 40.542
+                        },
+                        {
+                            "StartFrame": 1517,
+                            "EndFrame": 1522,
+                            "Pitch": -3.753,
+                            "Yaw": 44.074
+                        }
+                    ]
+                },
+                {
+                    "VideoID": "V4",
+                    "Fixation": [
+                        {
+                            "StartFrame": 17,
+                            "EndFrame": 22,
+                            "Pitch": -4.254,
+                            "Yaw": 4.157
+                        },
+                        {
+                            "StartFrame": 35,
+                            "EndFrame": 41,
+                            "Pitch": 2.195,
+                            "Yaw": -7.696
+                        },
+                        {
+                            "StartFrame": 53,
+                            "EndFrame": 71,
+                            "Pitch": 0.752,
+                            "Yaw": -1.477
+                        },
+                        {
+                            "StartFrame": 87,
+                            "EndFrame": 116,
+                            "Pitch": 2.107,
+                            "Yaw": 0.671
+                        },
+                        {
+                            "StartFrame": 118,
+                            "EndFrame": 127,
+                            "Pitch": 2.134,
+                            "Yaw": 0.853
+                        },
+                        {
+                            "StartFrame": 150,
+                            "EndFrame": 158,
+                            "Pitch": -2.889,
+                            "Yaw": 4.316
+                        },
+                        {
+                            "StartFrame": 163,
+                            "EndFrame": 181,
+                            "Pitch": -1.736,
+                            "Yaw": 20.412
+                        },
+                        {
+                            "StartFrame": 185,
+                            "EndFrame": 193,
+                            "Pitch": -1.742,
+                            "Yaw": 18.416
+                        },
+                        {
+                            "StartFrame": 203,
+                            "EndFrame": 217,
+                            "Pitch": -2.724,
+                            "Yaw": 15.205
+                        },
+                        {
+                            "StartFrame": 228,
+                            "EndFrame": 301,
+                            "Pitch": -3.044,
+                            "Yaw": 12.432
+                        },
+                        {
+                            "StartFrame": 303,
+                            "EndFrame": 313,
+                            "Pitch": -2.956,
+                            "Yaw": 10.196
+                        },
+                        {
+                            "StartFrame": 315,
+                            "EndFrame": 368,
+                            "Pitch": -3.242,
+                            "Yaw": 11.151
+                        },
+                        {
+                            "StartFrame": 372,
+                            "EndFrame": 380,
+                            "Pitch": -1.004,
+                            "Yaw": 1.522
+                        },
+                        {
+                            "StartFrame": 384,
+                            "EndFrame": 394,
+                            "Pitch": -1.656,
+                            "Yaw": 18.436
+                        },
+                        {
+                            "StartFrame": 648,
+                            "EndFrame": 654,
+                            "Pitch": -4.684,
+                            "Yaw": 14.022
+                        },
+                        {
+                            "StartFrame": 680,
+                            "EndFrame": 689,
+                            "Pitch": -2.982,
+                            "Yaw": 24.338
+                        },
+                        {
+                            "StartFrame": 698,
+                            "EndFrame": 707,
+                            "Pitch": -2.457,
+                            "Yaw": 12.323
+                        },
+                        {
+                            "StartFrame": 720,
+                            "EndFrame": 727,
+                            "Pitch": -1.98,
+                            "Yaw": 11.872
+                        },
+                        {
+                            "StartFrame": 739,
+                            "EndFrame": 748,
+                            "Pitch": -2.772,
+                            "Yaw": 21.216
+                        },
+                        {
+                            "StartFrame": 768,
+                            "EndFrame": 777,
+                            "Pitch": -2.732,
+                            "Yaw": 23.683
+                        },
+                        {
+                            "StartFrame": 782,
+                            "EndFrame": 787,
+                            "Pitch": -2.587,
+                            "Yaw": 15.149
+                        },
+                        {
+                            "StartFrame": 791,
+                            "EndFrame": 804,
+                            "Pitch": -2.908,
+                            "Yaw": 23.342
+                        },
+                        {
+                            "StartFrame": 808,
+                            "EndFrame": 818,
+                            "Pitch": -2.283,
+                            "Yaw": 14.418
+                        },
+                        {
+                            "StartFrame": 828,
+                            "EndFrame": 836,
+                            "Pitch": -8.415,
+                            "Yaw": 32.737
+                        },
+                        {
+                            "StartFrame": 867,
+                            "EndFrame": 890,
+                            "Pitch": -1.919,
+                            "Yaw": 18.199
+                        },
+                        {
+                            "StartFrame": 892,
+                            "EndFrame": 901,
+                            "Pitch": -1.761,
+                            "Yaw": 18.002
+                        },
+                        {
+                            "StartFrame": 905,
+                            "EndFrame": 912,
+                            "Pitch": -1.904,
+                            "Yaw": 18.779
+                        },
+                        {
+                            "StartFrame": 925,
+                            "EndFrame": 939,
+                            "Pitch": -1.983,
+                            "Yaw": 17.002
+                        },
+                        {
+                            "StartFrame": 944,
+                            "EndFrame": 957,
+                            "Pitch": 2.067,
+                            "Yaw": -5.785
+                        },
+                        {
+                            "StartFrame": 962,
+                            "EndFrame": 987,
+                            "Pitch": -1.827,
+                            "Yaw": 14.049
+                        },
+                        {
+                            "StartFrame": 991,
+                            "EndFrame": 1009,
+                            "Pitch": -2.216,
+                            "Yaw": 21.904
+                        },
+                        {
+                            "StartFrame": 1014,
+                            "EndFrame": 1027,
+                            "Pitch": -1.398,
+                            "Yaw": 27.104
+                        },
+                        {
+                            "StartFrame": 1031,
+                            "EndFrame": 1036,
+                            "Pitch": -2.53,
+                            "Yaw": 9.608
+                        },
+                        {
+                            "StartFrame": 1052,
+                            "EndFrame": 1058,
+                            "Pitch": -0.854,
+                            "Yaw": 25.95
+                        },
+                        {
+                            "StartFrame": 1060,
+                            "EndFrame": 1072,
+                            "Pitch": -1.453,
+                            "Yaw": 24.703
+                        },
+                        {
+                            "StartFrame": 1077,
+                            "EndFrame": 1084,
+                            "Pitch": 2.91,
+                            "Yaw": 10.42
+                        },
+                        {
+                            "StartFrame": 1095,
+                            "EndFrame": 1105,
+                            "Pitch": 0.686,
+                            "Yaw": 16.604
+                        },
+                        {
+                            "StartFrame": 1168,
+                            "EndFrame": 1181,
+                            "Pitch": -6.537,
+                            "Yaw": 40.857
+                        },
+                        {
+                            "StartFrame": 1188,
+                            "EndFrame": 1193,
+                            "Pitch": -0.909,
+                            "Yaw": 46.728
+                        },
+                        {
+                            "StartFrame": 1263,
+                            "EndFrame": 1271,
+                            "Pitch": 4.712,
+                            "Yaw": -45.642
+                        },
+                        {
+                            "StartFrame": 1290,
+                            "EndFrame": 1295,
+                            "Pitch": 7.366,
+                            "Yaw": -45.12
+                        },
+                        {
+                            "StartFrame": 1308,
+                            "EndFrame": 1323,
+                            "Pitch": 9.378,
+                            "Yaw": -39.14
+                        },
+                        {
+                            "StartFrame": 1325,
+                            "EndFrame": 1339,
+                            "Pitch": 8.9,
+                            "Yaw": -39.262
+                        },
+                        {
+                            "StartFrame": 1349,
+                            "EndFrame": 1359,
+                            "Pitch": 7.398,
+                            "Yaw": -40.028
+                        },
+                        {
+                            "StartFrame": 1361,
+                            "EndFrame": 1366,
+                            "Pitch": 7.03,
+                            "Yaw": -40.36
+                        },
+                        {
+                            "StartFrame": 1368,
+                            "EndFrame": 1466,
+                            "Pitch": 5.764,
+                            "Yaw": -41.506
+                        },
+                        {
+                            "StartFrame": 1468,
+                            "EndFrame": 1502,
+                            "Pitch": 3.559,
+                            "Yaw": -41.009
+                        },
+                        {
+                            "StartFrame": 1509,
+                            "EndFrame": 1523,
+                            "Pitch": 2.655,
+                            "Yaw": -39.935
+                        },
+                        {
+                            "StartFrame": 1525,
+                            "EndFrame": 1536,
+                            "Pitch": 2.348,
+                            "Yaw": -39.775
+                        },
+                        {
+                            "StartFrame": 1545,
+                            "EndFrame": 1553,
+                            "Pitch": 2.293,
+                            "Yaw": -39.758
+                        },
+                        {
+                            "StartFrame": 1555,
+                            "EndFrame": 1564,
+                            "Pitch": 2.772,
+                            "Yaw": -39.105
+                        },
+                        {
+                            "StartFrame": 1570,
+                            "EndFrame": 1634,
+                            "Pitch": 2.47,
+                            "Yaw": -39.025
+                        },
+                        {
+                            "StartFrame": 1636,
+                            "EndFrame": 1643,
+                            "Pitch": 2.787,
+                            "Yaw": -38.423
+                        },
+                        {
+                            "StartFrame": 1645,
+                            "EndFrame": 1713,
+                            "Pitch": 2.964,
+                            "Yaw": -39.694
+                        },
+                        {
+                            "StartFrame": 1715,
+                            "EndFrame": 1762,
+                            "Pitch": 2.922,
+                            "Yaw": -40.2
+                        }
+                    ]
+                },
+                {
+                    "VideoID": "V5",
+                    "Fixation": [
+                        {
+                            "StartFrame": 3,
+                            "EndFrame": 9,
+                            "Pitch": 0.248,
+                            "Yaw": -0.222
+                        },
+                        {
+                            "StartFrame": 22,
+                            "EndFrame": 30,
+                            "Pitch": -15.203,
+                            "Yaw": 4.896
+                        },
+                        {
+                            "StartFrame": 40,
+                            "EndFrame": 45,
+                            "Pitch": -6.717,
+                            "Yaw": 7.564
+                        },
+                        {
+                            "StartFrame": 48,
+                            "EndFrame": 59,
+                            "Pitch": -11.163,
+                            "Yaw": 5.886
+                        },
+                        {
+                            "StartFrame": 63,
+                            "EndFrame": 78,
+                            "Pitch": -17.196,
+                            "Yaw": 7.391
+                        },
+                        {
+                            "StartFrame": 82,
+                            "EndFrame": 87,
+                            "Pitch": -10.787,
+                            "Yaw": 8.826
+                        },
+                        {
+                            "StartFrame": 91,
+                            "EndFrame": 98,
+                            "Pitch": -15.085,
+                            "Yaw": 5.612
+                        },
+                        {
+                            "StartFrame": 122,
+                            "EndFrame": 127,
+                            "Pitch": -19.856,
+                            "Yaw": 35.434
+                        },
+                        {
+                            "StartFrame": 150,
+                            "EndFrame": 159,
+                            "Pitch": 7.74,
+                            "Yaw": -19.749
+                        },
+                        {
+                            "StartFrame": 170,
+                            "EndFrame": 175,
+                            "Pitch": -24.272,
+                            "Yaw": 9.323
+                        },
+                        {
+                            "StartFrame": 181,
+                            "EndFrame": 205,
+                            "Pitch": -14.893,
+                            "Yaw": 5.391
+                        },
+                        {
+                            "StartFrame": 223,
+                            "EndFrame": 229,
+                            "Pitch": -14.851,
+                            "Yaw": 5.307
+                        },
+                        {
+                            "StartFrame": 235,
+                            "EndFrame": 245,
+                            "Pitch": -23.038,
+                            "Yaw": 6.037
+                        },
+                        {
+                            "StartFrame": 255,
+                            "EndFrame": 272,
+                            "Pitch": -13.978,
+                            "Yaw": 4.776
+                        },
+                        {
+                            "StartFrame": 290,
+                            "EndFrame": 297,
+                            "Pitch": -10.935,
+                            "Yaw": 3.189
+                        },
+                        {
+                            "StartFrame": 317,
+                            "EndFrame": 325,
+                            "Pitch": -15.294,
+                            "Yaw": 7.607
+                        },
+                        {
+                            "StartFrame": 329,
+                            "EndFrame": 341,
+                            "Pitch": -21.254,
+                            "Yaw": 5.745
+                        },
+                        {
+                            "StartFrame": 349,
+                            "EndFrame": 358,
+                            "Pitch": -21.5,
+                            "Yaw": 6.187
+                        },
+                        {
+                            "StartFrame": 375,
+                            "EndFrame": 384,
+                            "Pitch": -16.686,
+                            "Yaw": 6.847
+                        },
+                        {
+                            "StartFrame": 389,
+                            "EndFrame": 394,
+                            "Pitch": -20.76,
+                            "Yaw": 5.786
+                        },
+                        {
+                            "StartFrame": 396,
+                            "EndFrame": 419,
+                            "Pitch": -21.239,
+                            "Yaw": 5.973
+                        },
+                        {
+                            "StartFrame": 513,
+                            "EndFrame": 529,
+                            "Pitch": -12.326,
+                            "Yaw": 2.117
+                        },
+                        {
+                            "StartFrame": 587,
+                            "EndFrame": 593,
+                            "Pitch": -19.423,
+                            "Yaw": 7.959
+                        },
+                        {
+                            "StartFrame": 598,
+                            "EndFrame": 627,
+                            "Pitch": -20.504,
+                            "Yaw": 7.531
+                        },
+                        {
+                            "StartFrame": 639,
+                            "EndFrame": 646,
+                            "Pitch": -10.426,
+                            "Yaw": 9.712
+                        },
+                        {
+                            "StartFrame": 657,
+                            "EndFrame": 662,
+                            "Pitch": -14.674,
+                            "Yaw": -4.82
+                        },
+                        {
+                            "StartFrame": 691,
+                            "EndFrame": 696,
+                            "Pitch": -22.89,
+                            "Yaw": 16.271
+                        },
+                        {
+                            "StartFrame": 723,
+                            "EndFrame": 736,
+                            "Pitch": -18.994,
+                            "Yaw": 13.346
+                        },
+                        {
+                            "StartFrame": 740,
+                            "EndFrame": 750,
+                            "Pitch": -23.173,
+                            "Yaw": 9.109
+                        },
+                        {
+                            "StartFrame": 761,
+                            "EndFrame": 770,
+                            "Pitch": -23.608,
+                            "Yaw": 11.691
+                        },
+                        {
+                            "StartFrame": 797,
+                            "EndFrame": 803,
+                            "Pitch": -15.649,
+                            "Yaw": 3.43
+                        },
+                        {
+                            "StartFrame": 808,
+                            "EndFrame": 813,
+                            "Pitch": -16.827,
+                            "Yaw": -2.924
+                        },
+                        {
+                            "StartFrame": 853,
+                            "EndFrame": 869,
+                            "Pitch": -13.995,
+                            "Yaw": 0.412
+                        },
+                        {
+                            "StartFrame": 874,
+                            "EndFrame": 880,
+                            "Pitch": -18.728,
+                            "Yaw": -3.71
+                        },
+                        {
+                            "StartFrame": 901,
+                            "EndFrame": 916,
+                            "Pitch": -13.443,
+                            "Yaw": 2.096
+                        },
+                        {
+                            "StartFrame": 920,
+                            "EndFrame": 926,
+                            "Pitch": -20.225,
+                            "Yaw": -1.947
+                        },
+                        {
+                            "StartFrame": 963,
+                            "EndFrame": 968,
+                            "Pitch": -25.265,
+                            "Yaw": 26.085
+                        },
+                        {
+                            "StartFrame": 980,
+                            "EndFrame": 986,
+                            "Pitch": -19.903,
+                            "Yaw": -0.268
+                        },
+                        {
+                            "StartFrame": 1056,
+                            "EndFrame": 1061,
+                            "Pitch": -19.294,
+                            "Yaw": -23.971
+                        },
+                        {
+                            "StartFrame": 1065,
+                            "EndFrame": 1070,
+                            "Pitch": -20.368,
+                            "Yaw": -15.258
+                        },
+                        {
+                            "StartFrame": 1098,
+                            "EndFrame": 1115,
+                            "Pitch": -19.992,
+                            "Yaw": -21.421
+                        },
+                        {
+                            "StartFrame": 1131,
+                            "EndFrame": 1140,
+                            "Pitch": -17.932,
+                            "Yaw": -9.85
+                        },
+                        {
+                            "StartFrame": 1143,
+                            "EndFrame": 1152,
+                            "Pitch": -17.282,
+                            "Yaw": -8.786
+                        },
+                        {
+                            "StartFrame": 1352,
+                            "EndFrame": 1358,
+                            "Pitch": 74.094,
+                            "Yaw": 95.243
+                        },
+                        {
+                            "StartFrame": 1524,
+                            "EndFrame": 1530,
+                            "Pitch": 30.506,
+                            "Yaw": 173.072
+                        },
+                        {
+                            "StartFrame": 1546,
+                            "EndFrame": 1567,
+                            "Pitch": -14.152,
+                            "Yaw": -178.547
+                        },
+                        {
+                            "StartFrame": 1569,
+                            "EndFrame": 1579,
+                            "Pitch": -13.463,
+                            "Yaw": 179.425
+                        },
+                        {
+                            "StartFrame": 1583,
+                            "EndFrame": 1602,
+                            "Pitch": -11.922,
+                            "Yaw": 173.688
+                        },
+                        {
+                            "StartFrame": 1605,
+                            "EndFrame": 1616,
+                            "Pitch": -12.793,
+                            "Yaw": 168.8
+                        },
+                        {
+                            "StartFrame": 1618,
+                            "EndFrame": 1624,
+                            "Pitch": -12.612,
+                            "Yaw": 167.753
+                        },
+                        {
+                            "StartFrame": 1759,
+                            "EndFrame": 1765,
+                            "Pitch": -24.164,
+                            "Yaw": -7.396
+                        },
+                        {
+                            "StartFrame": 1781,
+                            "EndFrame": 1795,
+                            "Pitch": -34.076,
+                            "Yaw": -4.836
+                        }
+                    ]
+                },
+                {
+                    "VideoID": "V6",
+                    "Fixation": [
+                        {
+                            "StartFrame": 66,
+                            "EndFrame": 79,
+                            "Pitch": -4.915,
+                            "Yaw": 48.719
+                        },
+                        {
+                            "StartFrame": 95,
+                            "EndFrame": 100,
+                            "Pitch": -18.426,
+                            "Yaw": 65.353
+                        },
+                        {
+                            "StartFrame": 197,
+                            "EndFrame": 207,
+                            "Pitch": -1.847,
+                            "Yaw": -17.533
+                        },
+                        {
+                            "StartFrame": 221,
+                            "EndFrame": 233,
+                            "Pitch": -1.985,
+                            "Yaw": -17.988
+                        },
+                        {
+                            "StartFrame": 247,
+                            "EndFrame": 252,
+                            "Pitch": -16.861,
+                            "Yaw": -3.926
+                        },
+                        {
+                            "StartFrame": 262,
+                            "EndFrame": 271,
+                            "Pitch": -2.602,
+                            "Yaw": -18.677
+                        },
+                        {
+                            "StartFrame": 275,
+                            "EndFrame": 283,
+                            "Pitch": 0.323,
+                            "Yaw": -22.133
+                        },
+                        {
+                            "StartFrame": 286,
+                            "EndFrame": 292,
+                            "Pitch": 2.673,
+                            "Yaw": -23.046
+                        },
+                        {
+                            "StartFrame": 296,
+                            "EndFrame": 335,
+                            "Pitch": -2.89,
+                            "Yaw": -27.653
+                        },
+                        {
+                            "StartFrame": 595,
+                            "EndFrame": 600,
+                            "Pitch": -6.881,
+                            "Yaw": -29.728
+                        },
+                        {
+                            "StartFrame": 606,
+                            "EndFrame": 616,
+                            "Pitch": -4.596,
+                            "Yaw": -20.817
+                        },
+                        {
+                            "StartFrame": 622,
+                            "EndFrame": 632,
+                            "Pitch": -4.313,
+                            "Yaw": -20.72
+                        },
+                        {
+                            "StartFrame": 650,
+                            "EndFrame": 694,
+                            "Pitch": -4.081,
+                            "Yaw": -16.322
+                        },
+                        {
+                            "StartFrame": 696,
+                            "EndFrame": 996,
+                            "Pitch": -5.663,
+                            "Yaw": -16.472
+                        },
+                        {
+                            "StartFrame": 1005,
+                            "EndFrame": 1024,
+                            "Pitch": -3.633,
+                            "Yaw": -17.939
+                        },
+                        {
+                            "StartFrame": 1027,
+                            "EndFrame": 1308,
+                            "Pitch": -7.059,
+                            "Yaw": -18.898
+                        },
+                        {
+                            "StartFrame": 1319,
+                            "EndFrame": 1378,
+                            "Pitch": -3.116,
+                            "Yaw": -16.972
+                        },
+                        {
+                            "StartFrame": 1391,
+                            "EndFrame": 1396,
+                            "Pitch": 0.801,
+                            "Yaw": -20.87
+                        },
+                        {
+                            "StartFrame": 1400,
+                            "EndFrame": 1405,
+                            "Pitch": -5.263,
+                            "Yaw": -7.023
+                        },
+                        {
+                            "StartFrame": 1409,
+                            "EndFrame": 1426,
+                            "Pitch": -5.549,
+                            "Yaw": -14.584
+                        },
+                        {
+                            "StartFrame": 1438,
+                            "EndFrame": 1445,
+                            "Pitch": -6.389,
+                            "Yaw": -16.507
+                        },
+                        {
+                            "StartFrame": 1456,
+                            "EndFrame": 1462,
+                            "Pitch": 1.227,
+                            "Yaw": -22.199
+                        },
+                        {
+                            "StartFrame": 1550,
+                            "EndFrame": 1560,
+                            "Pitch": -8.082,
+                            "Yaw": 46.524
+                        },
+                        {
+                            "StartFrame": 1590,
+                            "EndFrame": 1598,
+                            "Pitch": -4.487,
+                            "Yaw": -30.394
+                        },
+                        {
+                            "StartFrame": 1614,
+                            "EndFrame": 1620,
+                            "Pitch": -5.713,
+                            "Yaw": -32.155
+                        },
+                        {
+                            "StartFrame": 1628,
+                            "EndFrame": 1633,
+                            "Pitch": -3.673,
+                            "Yaw": -24.708
+                        },
+                        {
+                            "StartFrame": 1637,
+                            "EndFrame": 1653,
+                            "Pitch": -4.066,
+                            "Yaw": -17.942
+                        },
+                        {
+                            "StartFrame": 1656,
+                            "EndFrame": 1669,
+                            "Pitch": -4.803,
+                            "Yaw": -17.271
+                        },
+                        {
+                            "StartFrame": 1680,
+                            "EndFrame": 1699,
+                            "Pitch": -6.581,
+                            "Yaw": -28.618
+                        },
+                        {
+                            "StartFrame": 1703,
+                            "EndFrame": 1780,
+                            "Pitch": -7.137,
+                            "Yaw": -24.59
+                        },
+                        {
+                            "StartFrame": 1790,
+                            "EndFrame": 1799,
+                            "Pitch": -2.016,
+                            "Yaw": -24.43
+                        }
+                    ]
+                },
+                {
+                    "VideoID": "V7",
+                    "Fixation": [
+                        {
+                            "StartFrame": 67,
+                            "EndFrame": 74,
+                            "Pitch": -0.931,
+                            "Yaw": -26.159
+                        },
+                        {
+                            "StartFrame": 81,
+                            "EndFrame": 87,
+                            "Pitch": -2.356,
+                            "Yaw": -33.215
+                        },
+                        {
+                            "StartFrame": 89,
+                            "EndFrame": 94,
+                            "Pitch": -2.086,
+                            "Yaw": -32.491
+                        },
+                        {
+                            "StartFrame": 96,
+                            "EndFrame": 101,
+                            "Pitch": -2.896,
+                            "Yaw": -31.363
+                        },
+                        {
+                            "StartFrame": 166,
+                            "EndFrame": 171,
+                            "Pitch": -20.888,
+                            "Yaw": 7.572
+                        },
+                        {
+                            "StartFrame": 175,
+                            "EndFrame": 185,
+                            "Pitch": -20.902,
+                            "Yaw": 6.952
+                        },
+                        {
+                            "StartFrame": 217,
+                            "EndFrame": 226,
+                            "Pitch": -19.617,
+                            "Yaw": 7.115
+                        },
+                        {
+                            "StartFrame": 239,
+                            "EndFrame": 246,
+                            "Pitch": 5.825,
+                            "Yaw": -24.402
+                        },
+                        {
+                            "StartFrame": 256,
+                            "EndFrame": 262,
+                            "Pitch": 5.907,
+                            "Yaw": -16.38
+                        },
+                        {
+                            "StartFrame": 266,
+                            "EndFrame": 279,
+                            "Pitch": 6.926,
+                            "Yaw": -22.232
+                        },
+                        {
+                            "StartFrame": 434,
+                            "EndFrame": 440,
+                            "Pitch": 4.245,
+                            "Yaw": -151.75
+                        },
+                        {
+                            "StartFrame": 442,
+                            "EndFrame": 453,
+                            "Pitch": 4.06,
+                            "Yaw": -152.762
+                        },
+                        {
+                            "StartFrame": 480,
+                            "EndFrame": 486,
+                            "Pitch": -20.453,
+                            "Yaw": -119.466
+                        },
+                        {
+                            "StartFrame": 622,
+                            "EndFrame": 631,
+                            "Pitch": -21.928,
+                            "Yaw": 23.344
+                        },
+                        {
+                            "StartFrame": 675,
+                            "EndFrame": 680,
+                            "Pitch": -18.219,
+                            "Yaw": 18.399
+                        },
+                        {
+                            "StartFrame": 696,
+                            "EndFrame": 730,
+                            "Pitch": 0.232,
+                            "Yaw": -5.374
+                        },
+                        {
+                            "StartFrame": 734,
+                            "EndFrame": 746,
+                            "Pitch": 5.11,
+                            "Yaw": 1.016
+                        },
+                        {
+                            "StartFrame": 757,
+                            "EndFrame": 764,
+                            "Pitch": 17.976,
+                            "Yaw": -1.65
+                        },
+                        {
+                            "StartFrame": 817,
+                            "EndFrame": 830,
+                            "Pitch": 0.813,
+                            "Yaw": -27.369
+                        },
+                        {
+                            "StartFrame": 860,
+                            "EndFrame": 865,
+                            "Pitch": 0.604,
+                            "Yaw": 36.634
+                        },
+                        {
+                            "StartFrame": 874,
+                            "EndFrame": 885,
+                            "Pitch": 0.452,
+                            "Yaw": 35.786
+                        },
+                        {
+                            "StartFrame": 902,
+                            "EndFrame": 907,
+                            "Pitch": -3.421,
+                            "Yaw": 60.401
+                        },
+                        {
+                            "StartFrame": 922,
+                            "EndFrame": 928,
+                            "Pitch": -0.735,
+                            "Yaw": 35.918
+                        },
+                        {
+                            "StartFrame": 984,
+                            "EndFrame": 990,
+                            "Pitch": 0.208,
+                            "Yaw": -11.586
+                        },
+                        {
+                            "StartFrame": 992,
+                            "EndFrame": 999,
+                            "Pitch": 0.433,
+                            "Yaw": -10.523
+                        },
+                        {
+                            "StartFrame": 1122,
+                            "EndFrame": 1129,
+                            "Pitch": -0.094,
+                            "Yaw": 36.552
+                        },
+                        {
+                            "StartFrame": 1401,
+                            "EndFrame": 1409,
+                            "Pitch": -3.519,
+                            "Yaw": 115.345
+                        }
+                    ]
+                },
+                {
+                    "VideoID": "V8",
+                    "Fixation": [
+                        {
+                            "StartFrame": 89,
+                            "EndFrame": 95,
+                            "Pitch": -15.984,
+                            "Yaw": -55.93
+                        },
+                        {
+                            "StartFrame": 99,
+                            "EndFrame": 129,
+                            "Pitch": -11.631,
+                            "Yaw": -51.006
+                        },
+                        {
+                            "StartFrame": 168,
+                            "EndFrame": 174,
+                            "Pitch": -5.381,
+                            "Yaw": -92.258
+                        },
+                        {
+                            "StartFrame": 179,
+                            "EndFrame": 188,
+                            "Pitch": -4.589,
+                            "Yaw": -104.705
+                        },
+                        {
+                            "StartFrame": 209,
+                            "EndFrame": 214,
+                            "Pitch": -7.725,
+                            "Yaw": -123.528
+                        },
+                        {
+                            "StartFrame": 228,
+                            "EndFrame": 244,
+                            "Pitch": -3.301,
+                            "Yaw": -92.416
+                        },
+                        {
+                            "StartFrame": 247,
+                            "EndFrame": 257,
+                            "Pitch": -3.633,
+                            "Yaw": -92.933
+                        },
+                        {
+                            "StartFrame": 262,
+                            "EndFrame": 274,
+                            "Pitch": -26.361,
+                            "Yaw": -95.457
+                        },
+                        {
+                            "StartFrame": 325,
+                            "EndFrame": 383,
+                            "Pitch": 13.542,
+                            "Yaw": -46.192
+                        },
+                        {
+                            "StartFrame": 387,
+                            "EndFrame": 396,
+                            "Pitch": 8.738,
+                            "Yaw": -47.39
+                        },
+                        {
+                            "StartFrame": 400,
+                            "EndFrame": 405,
+                            "Pitch": 11.806,
+                            "Yaw": -47.696
+                        },
+                        {
+                            "StartFrame": 421,
+                            "EndFrame": 429,
+                            "Pitch": -17.611,
+                            "Yaw": -61.05
+                        },
+                        {
+                            "StartFrame": 450,
+                            "EndFrame": 456,
+                            "Pitch": -21.715,
+                            "Yaw": -34.833
+                        },
+                        {
+                            "StartFrame": 470,
+                            "EndFrame": 477,
+                            "Pitch": -18.093,
+                            "Yaw": -82.798
+                        },
+                        {
+                            "StartFrame": 480,
+                            "EndFrame": 485,
+                            "Pitch": -18.029,
+                            "Yaw": -83.181
+                        },
+                        {
+                            "StartFrame": 522,
+                            "EndFrame": 538,
+                            "Pitch": -24.824,
+                            "Yaw": -66.333
+                        },
+                        {
+                            "StartFrame": 548,
+                            "EndFrame": 553,
+                            "Pitch": -9.642,
+                            "Yaw": -108.282
+                        },
+                        {
+                            "StartFrame": 562,
+                            "EndFrame": 567,
+                            "Pitch": -7.102,
+                            "Yaw": -114.789
+                        },
+                        {
+                            "StartFrame": 573,
+                            "EndFrame": 578,
+                            "Pitch": -25.458,
+                            "Yaw": -132.155
+                        },
+                        {
+                            "StartFrame": 590,
+                            "EndFrame": 615,
+                            "Pitch": -6.71,
+                            "Yaw": -110.431
+                        },
+                        {
+                            "StartFrame": 626,
+                            "EndFrame": 637,
+                            "Pitch": -1.65,
+                            "Yaw": -95.507
+                        },
+                        {
+                            "StartFrame": 642,
+                            "EndFrame": 653,
+                            "Pitch": -8.888,
+                            "Yaw": -102.642
+                        },
+                        {
+                            "StartFrame": 663,
+                            "EndFrame": 668,
+                            "Pitch": -7.421,
+                            "Yaw": -100.566
+                        },
+                        {
+                            "StartFrame": 703,
+                            "EndFrame": 708,
+                            "Pitch": 7.869,
+                            "Yaw": -72.331
+                        },
+                        {
+                            "StartFrame": 715,
+                            "EndFrame": 902,
+                            "Pitch": 8.184,
+                            "Yaw": -82.72
+                        },
+                        {
+                            "StartFrame": 904,
+                            "EndFrame": 917,
+                            "Pitch": 8.04,
+                            "Yaw": -82.683
+                        },
+                        {
+                            "StartFrame": 929,
+                            "EndFrame": 1026,
+                            "Pitch": -6.463,
+                            "Yaw": -77.452
+                        },
+                        {
+                            "StartFrame": 1082,
+                            "EndFrame": 1087,
+                            "Pitch": -22.072,
+                            "Yaw": -40.522
+                        },
+                        {
+                            "StartFrame": 1096,
+                            "EndFrame": 1102,
+                            "Pitch": 4.13,
+                            "Yaw": -70.664
+                        },
+                        {
+                            "StartFrame": 1228,
+                            "EndFrame": 1236,
+                            "Pitch": 10.049,
+                            "Yaw": -89.67
+                        },
+                        {
+                            "StartFrame": 1342,
+                            "EndFrame": 1349,
+                            "Pitch": 8.208,
+                            "Yaw": -78.921
+                        },
+                        {
+                            "StartFrame": 1359,
+                            "EndFrame": 1369,
+                            "Pitch": 12.191,
+                            "Yaw": -104.952
+                        },
+                        {
+                            "StartFrame": 1373,
+                            "EndFrame": 1382,
+                            "Pitch": -3.932,
+                            "Yaw": -92.756
+                        },
+                        {
+                            "StartFrame": 1391,
+                            "EndFrame": 1398,
+                            "Pitch": 13.74,
+                            "Yaw": -106.174
+                        },
+                        {
+                            "StartFrame": 1443,
+                            "EndFrame": 1454,
+                            "Pitch": -12.9,
+                            "Yaw": -29.214
+                        },
+                        {
+                            "StartFrame": 1456,
+                            "EndFrame": 1469,
+                            "Pitch": -13.549,
+                            "Yaw": -29.188
+                        },
+                        {
+                            "StartFrame": 1480,
+                            "EndFrame": 1485,
+                            "Pitch": 3.988,
+                            "Yaw": -57.903
+                        },
+                        {
+                            "StartFrame": 1498,
+                            "EndFrame": 1504,
+                            "Pitch": -12.526,
+                            "Yaw": -66.099
+                        },
+                        {
+                            "StartFrame": 1524,
+                            "EndFrame": 1530,
+                            "Pitch": -13.6,
+                            "Yaw": -37.393
+                        },
+                        {
+                            "StartFrame": 1587,
+                            "EndFrame": 1596,
+                            "Pitch": 3.465,
+                            "Yaw": -79.735
+                        },
+                        {
+                            "StartFrame": 1600,
+                            "EndFrame": 1615,
+                            "Pitch": -0.757,
+                            "Yaw": -81.554
+                        },
+                        {
+                            "StartFrame": 1620,
+                            "EndFrame": 1625,
+                            "Pitch": -0.709,
+                            "Yaw": -69.952
+                        },
+                        {
+                            "StartFrame": 1633,
+                            "EndFrame": 1663,
+                            "Pitch": -1.413,
+                            "Yaw": -80.912
+                        },
+                        {
+                            "StartFrame": 1669,
+                            "EndFrame": 1677,
+                            "Pitch": -16.046,
+                            "Yaw": -64.289
+                        },
+                        {
+                            "StartFrame": 1682,
+                            "EndFrame": 1690,
+                            "Pitch": -11.981,
+                            "Yaw": -68.417
+                        },
+                        {
+                            "StartFrame": 1696,
+                            "EndFrame": 1706,
+                            "Pitch": -16.008,
+                            "Yaw": -65.219
+                        },
+                        {
+                            "StartFrame": 1716,
+                            "EndFrame": 1731,
+                            "Pitch": -16.367,
+                            "Yaw": -64.06
+                        },
+                        {
+                            "StartFrame": 1750,
+                            "EndFrame": 1755,
+                            "Pitch": -17.59,
+                            "Yaw": -60.078
+                        },
+                        {
+                            "StartFrame": 1757,
+                            "EndFrame": 1768,
+                            "Pitch": -17.624,
+                            "Yaw": -59.93
+                        },
+                        {
+                            "StartFrame": 1771,
+                            "EndFrame": 1786,
+                            "Pitch": -17.386,
+                            "Yaw": -59.728
+                        },
+                        {
+                            "StartFrame": 1789,
+                            "EndFrame": 1799,
+                            "Pitch": -17.075,
+                            "Yaw": -59.979
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+{
+    "name": "com.tobii.xr.sdk",
+    "displayName": "XR SDK",
+    "version": "0.0.1",
+    "unity": "2018.1",
+    "description": "Tobii",
+    "keywords": [
+        "tobii"
+    ],
+    "category": "Unity"
+}

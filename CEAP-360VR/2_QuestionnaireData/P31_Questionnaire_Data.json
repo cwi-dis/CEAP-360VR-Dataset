@@ -1,0 +1,182 @@
+{
+    "QuestionnaireData": [
+        {
+            "ParticipantID": "P31",
+            "Age": 33,
+            "Gender": "Male",
+            "VR Experience": "First time",
+            "Profession": "postdoc",
+            "FirstGroup": "DotSize",
+            "VideoOrder": "5 7 6 8 4 2 3 1 ",
+            "SSQ 0": "1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 ",
+            "SSQ 1": "1 1 1 1 1 1 1 1 1 1 2 2 2 1 1 1 ",
+            "SSQ 2": "1 1 1 1 1 1 1 1 1 1 2 2 2 1 1 1 ",
+            "IPQ 1": "-2 2 0 1 1 -1 -1 1 1 1 1 -3 -2 1 ",
+            "IPQ 2": "1 -2 -1 -1 1 -1 -1 1 -1 1 0 -2 -1 0 ",
+            "NASA-TLX 1": "5 4 7 5 14 7 12 ",
+            "NASA-TLX 2": "5 5 5 6 15 6 15 ",
+            "Video_SAMRating_VideoTime_Data": [
+                {
+                    "VideoID": "V1",
+                    "ValenceValue": 8,
+                    "ArousalValue": 8,
+                    "Start_End_TimeStamp": [
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:35:15.937",
+                            "UnixTimeStamp": 1582130115937,
+                            "UnixTimeStampWithoutMM": 1582130115,
+                            "DeviceTimeStamp": 278705413959
+                        },
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:36:15.978",
+                            "UnixTimeStamp": 1582130175978,
+                            "UnixTimeStampWithoutMM": 1582130175,
+                            "DeviceTimeStamp": 278765467592
+                        }
+                    ],
+                    "Video_Duration_in_Length": 60.054
+                },
+                {
+                    "VideoID": "V2",
+                    "ValenceValue": 7,
+                    "ArousalValue": 3,
+                    "Start_End_TimeStamp": [
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:32:17.83",
+                            "UnixTimeStamp": 1582129937830,
+                            "UnixTimeStampWithoutMM": 1582129937,
+                            "DeviceTimeStamp": 278526570776
+                        },
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:33:17.128",
+                            "UnixTimeStamp": 1582129997128,
+                            "UnixTimeStampWithoutMM": 1582129997,
+                            "DeviceTimeStamp": 278586616077
+                        }
+                    ],
+                    "Video_Duration_in_Length": 60.045
+                },
+                {
+                    "VideoID": "V3",
+                    "ValenceValue": 7,
+                    "ArousalValue": 8,
+                    "Start_End_TimeStamp": [
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:33:41.244",
+                            "UnixTimeStamp": 1582130021244,
+                            "UnixTimeStampWithoutMM": 1582130021,
+                            "DeviceTimeStamp": 278610731622
+                        },
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:34:41.84",
+                            "UnixTimeStamp": 1582130081840,
+                            "UnixTimeStampWithoutMM": 1582130081,
+                            "DeviceTimeStamp": 278670576966
+                        }
+                    ],
+                    "Video_Duration_in_Length": 59.845
+                },
+                {
+                    "VideoID": "V4",
+                    "ValenceValue": 2,
+                    "ArousalValue": 4,
+                    "Start_End_TimeStamp": [
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:30:43.52",
+                            "UnixTimeStamp": 1582129843520,
+                            "UnixTimeStampWithoutMM": 1582129843,
+                            "DeviceTimeStamp": 278432484538
+                        },
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:31:43.162",
+                            "UnixTimeStamp": 1582129903162,
+                            "UnixTimeStampWithoutMM": 1582129903,
+                            "DeviceTimeStamp": 278492646480
+                        }
+                    ],
+                    "Video_Duration_in_Length": 60.162
+                },
+                {
+                    "VideoID": "V5",
+                    "ValenceValue": 7,
+                    "ArousalValue": 7,
+                    "Start_End_TimeStamp": [
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:16:37.912",
+                            "UnixTimeStamp": 1582128997912,
+                            "UnixTimeStampWithoutMM": 1582128997,
+                            "DeviceTimeStamp": 277587354724
+                        },
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:17:38.14",
+                            "UnixTimeStamp": 1582129058140,
+                            "UnixTimeStampWithoutMM": 1582129058,
+                            "DeviceTimeStamp": 277647500003
+                        }
+                    ],
+                    "Video_Duration_in_Length": 60.145
+                },
+                {
+                    "VideoID": "V6",
+                    "ValenceValue": 7,
+                    "ArousalValue": 1,
+                    "Start_End_TimeStamp": [
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:20:18.101",
+                            "UnixTimeStamp": 1582129218101,
+                            "UnixTimeStampWithoutMM": 1582129218,
+                            "DeviceTimeStamp": 277807582345
+                        },
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:21:18.204",
+                            "UnixTimeStamp": 1582129278204,
+                            "UnixTimeStampWithoutMM": 1582129278,
+                            "DeviceTimeStamp": 277867694297
+                        }
+                    ],
+                    "Video_Duration_in_Length": 60.112
+                },
+                {
+                    "VideoID": "V7",
+                    "ValenceValue": 3,
+                    "ArousalValue": 8,
+                    "Start_End_TimeStamp": [
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:18:40.708",
+                            "UnixTimeStamp": 1582129120708,
+                            "UnixTimeStampWithoutMM": 1582129120,
+                            "DeviceTimeStamp": 277710196909
+                        },
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:19:40.813",
+                            "UnixTimeStamp": 1582129180813,
+                            "UnixTimeStampWithoutMM": 1582129180,
+                            "DeviceTimeStamp": 277770300530
+                        }
+                    ],
+                    "Video_Duration_in_Length": 60.104
+                },
+                {
+                    "VideoID": "V8",
+                    "ValenceValue": 2,
+                    "ArousalValue": 4,
+                    "Start_End_TimeStamp": [
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:21:58.572",
+                            "UnixTimeStamp": 1582129318572,
+                            "UnixTimeStampWithoutMM": 1582129318,
+                            "DeviceTimeStamp": 277908059393
+                        },
+                        {
+                            "SystemTimeStamp": "2020-02-19 17:22:58.678",
+                            "UnixTimeStamp": 1582129378678,
+                            "UnixTimeStampWithoutMM": 1582129378,
+                            "DeviceTimeStamp": 277968171346
+                        }
+                    ],
+                    "Video_Duration_in_Length": 60.112
+                }
+            ]
+        }
+    ]
+}

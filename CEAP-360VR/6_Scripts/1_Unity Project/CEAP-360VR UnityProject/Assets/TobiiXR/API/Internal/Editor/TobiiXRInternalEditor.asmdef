@@ -1,0 +1,14 @@
+{
+    "name": "TobiiXRInternalEditor",
+    "references": [
+        "TobiiXRCore",
+        "TobiiXRSDK",
+        "TobiiXRDevTools"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}

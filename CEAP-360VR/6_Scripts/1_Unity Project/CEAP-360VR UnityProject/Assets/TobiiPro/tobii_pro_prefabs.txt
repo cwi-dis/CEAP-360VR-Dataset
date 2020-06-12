@@ -1,0 +1,212 @@
+------------------------------------------------------------------------------
+ Copyright © 2019 Tobii Pro AB. All rights reserved.
+------------------------------------------------------------------------------
+
+--- What is a "prefab"? ---
+
+A prefab is a prefabricated reusable GameObject that has any necessary scripts
+and assets already connected to it. A prefab added to a scene will be
+instantiated when the scene runs.
+
+
+--- The Tobii Pro SDK prefabs ---
+
+The Tobii Pro SDK prefabs are meant as a help to start working with the Tobii
+Pro eye trackers within unity. The source code used in the prefabs are included
+and can be used as a starting point for any eye tracking enabled project. Note
+that they are not guaranteed to be suited for any particular purpose and
+additional development and testing may be necessary for any given project or use
+case.
+
+There are in total ten prefabs divided into five different use cases for screen
+based and VR eye trackers. With the exception of [TrackBoxGuide] and
+[VRPositioningGuide] they are named the same with the VR version having the
+prefix "VR". The prefabs are designed as singletons, which means that there
+should be a maximum of one instance per scene. The MonoBehaviour script object
+with the actual functionality of the prefab is available via a static Instance
+variable. The [EyeTracker] or [VREyeTracker] prefabs are necessary for any of
+the other prefabs to work, but apart from that they are independent of each
+other.
+
+The VR prefabs are located in:
+
+\Assets\TobiiPro\VR\Prefabs
+
+The screen based prefabs are located in:
+
+\Assets\TobiiPro\ScreenBased\Prefabs
+
+
+--- The [EyeTracker] and [VREyeTracker] prefabs ---
+
+The [EyeTracker] and [VREyeTracker] prefabs handle the connection to the screen
+based and HMD eye trackers respectively. At startup, the VR prefab will try to
+find and connect to a Vive VR eye tracker. The screen based prefab has the
+option to either connect to the first eye tracker found or match the (beginning
+of) a provided serial number.
+
+The MonoBehaviour objects can be obtained by the instance variables:
+EyeTracker.Instance and VREyeTracker.Instance.
+
+Data can be read through the the following public properties:
+
+LatestGazeData -- Provides the latest received gaze data. Will make sure to
+                  process any unprocessed gaze data before returning.
+
+LatestProcessedGazeData -- Provides the latest processed gaze data without
+                           trying to process any unprocessed data.
+
+NextData -- Gets the next gaze data and removes from the queue. This is useful
+            for making sure all gaze packets are seen, for example when saving
+            data. Note that the queue has a limited size and data will be
+            discarded if too long time has passed.
+
+Inspector properties, both prefabs:
+
+"Subscribe To Gaze" -- If checked, subscribe to gaze data automatically.
+
+Inspector properties, [EyeTracker]
+
+"Connect To First" -- Connect to the first found eye tracker.
+
+"Eye Tracker Serial Start" -- Match the provided eye tracker serial number. A
+                              partial serial number can be provided. The serial
+                              number is matched from the start of the string.
+
+
+--- The [Calibration] and [VRCalibration] prefabs ---
+
+A typical personal calibration displays a series of points for the user to focus
+on. These prefabs take care of displaying the calibration points and doing the
+necessary calculation. They also handle the blocking calls to the eye tracker in
+a separate thread so that the main rendering thread is not obstructed. For the
+screen based case it is important to run in full screen mode since the positions
+of the calibration points relate to the entirety of the screen.
+
+The MonoBehaviour objects can be obtained by the instance variables:
+Calibration.Instance and VRCalibration.Instance.
+
+To interact with the calibration object use the following:
+
+StartCalibration() -- Starts a new calibration. Optional parameters are the set
+                      of calibration points to use and an action to perform
+                      the calibration has finished.
+                      
+LatestCalibrationSuccessful -- A boolean indicating if the latest calibration
+                               was successful.
+
+CalibrationInProgress -- A boolean indicating if a calibration is currently in
+                         progress.
+
+Inspector properties:
+
+"Start Key" -- A key on the keyboard that can be used to start a calibration.
+
+"Points" -- The set of points to use in the calibration.
+
+
+--- The [GazeTrail] and [VRGazeTrail] prefabs ---
+
+The [GazeTrail] and [VRGazeTrail] prefabs provide a simple gaze visualization
+that can be handy for application development. The gaze trail consists of a
+series of particles that are placed where the combined gaze ray hits a collider
+on an object in the scene. The number of points can be between 0 and 1000, where
+0 is the special case of not showing any particles, but the raycast is still
+performed and the latest hit object is exposed in the LatestHitObject property.
+
+The MonoBehaviour objects can be obtained by the instance variables:
+GazeTrail.Instance and VRGazeTrail.Instance.
+
+To interact with the gaze trail object, use the following:
+
+On -- Boolean property turning the gaze trail on or off. This will stop
+      raycasting from being performed and the LatestHitObject will no longer
+      show the latest hit object.
+      
+ParticleCount -- Get or set the particle count. The list of particles will be
+                 reallocated. Setting particle count to 0 but keeping the On
+                 property true will keep exposing the LatestHitObject without
+                 displaying any particles.
+
+ParticleColor -- Gets or sets the particle color.
+
+LatestHitObject -- The latest hit object can be read here, or null if the latest
+                   raycast did not hit anything.
+                   
+Inspector properties:
+
+"Color" -- Selects the particle color.
+
+"Particle Count" -- Sets the particle count between 0 and 1000.
+
+"Particle Size" -- Adjusts the size of the particle.
+
+"On" -- Turns the gaze trail on or off.
+
+
+--- The [SaveData] and [VRSaveData] prefabs ---
+
+These two prefabs saves gaze data as XML. The data is per default saved in a
+folder called "Data" in the root of the project.
+
+The MonoBehaviour objects can be obtained by the instance variables:
+ScreenBasedSaveData.Instance and VRSaveData.Instance.
+
+To interact with the save data object, use the following:
+
+SaveData -- Boolean indicating if data saving is turned on or off.
+
+Inspector properties:
+
+"Save Data" -- Boolean indicating if any data is saved.
+
+"Save Unity Data" -- Boolean indicating if Unity3D-converted data is saved or
+                     not.
+
+"Save Raw Data" -- Boolean indicating if raw gaze data is saved or not.
+
+"Folder" -- Folder in the application root directory where data is saved.
+
+"Toggle Save Data" -- A key on the keyboard that will start or stop saving data.
+
+
+--- The [TrackBoxGuide] and [VRPositioningGuide] ---
+
+These two prefabs have a similar, but not exactly equivalent functionality. The
+TrackBoxGuide aims to guide the user to have an optimal position in the track
+box of a screen based eye tracker, whereas the VRPositioningGuide aims to help
+the user position the HMD for both an optimal viewing experience, and optimal
+eye tracking functionality.
+
+They also behave a little different. The track box guide shows a representation
+of the eyes in a moving plane in the track box, and the VR positioning guide
+shows a representation of the eyes in a 2D plane, where adjustment is done in
+the x and y directions.
+
+The MonoBehaviour objects can be obtained by the instance variables:
+TrackBoxGuide.Instance and VRPositioningGuide.Instance.
+
+To interact with the [TrackBoxGuide], use the following:
+
+TrackBoxGuideActive -- Boolean indicating if the track box guide is visible and
+                       running or not.
+
+To interact with the [VRPositioningGuide], use the following:
+
+PositioningGuideActive -- Boolean indicating if the track box guide is visible
+                          and running or not.
+
+Inspector properties, both prefabs:
+
+"Toggle Key" -- A key on the keyboard that will start or stop the guide.
+
+Inspector properties, [TrackBoxGuide]:
+
+"Track Box Guide Active" -- Boolean indicating if the track box guide should be
+                            active and running at startup.
+
+Inspector properties, [VRPositioningGuide]:
+
+"Positioning Guide Active" -- Boolean indicating if the positioning guide should
+                              be active and running at startup.
+

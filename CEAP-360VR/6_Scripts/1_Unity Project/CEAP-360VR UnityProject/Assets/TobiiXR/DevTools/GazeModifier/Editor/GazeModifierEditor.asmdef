@@ -1,0 +1,15 @@
+{
+    "name": "GazeModifierEditor",
+    "references": [
+        "TobiiXRCore",
+        "TobiiXRInternalEditor",
+        "TobiiXRDevTools",
+        "TobiiXRSDK"
+    ],
+    "optionalUnityReferences": [],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false
+}
