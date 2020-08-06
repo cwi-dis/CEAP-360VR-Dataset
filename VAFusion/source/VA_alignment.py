@@ -1,5 +1,7 @@
 import numpy as np
 from dtw import *
+import warnings
+warnings.filterwarnings('ignore')
 
 def dtw_distance(a,b):
     alignment = dtw(a, b, keep_internals=True)
@@ -20,13 +22,13 @@ def feature_selection(samples,samples_v):
                 for k in range(3):#for 3 features
                     corr[i,j,k,0] = abs(np.corrcoef([data_p["Valence"],data_v[data_v.keys()[k+2]]])[0,1])
                     corr[i,j,k,1] = abs(np.corrcoef([data_p["Arousal"],data_v[data_v.keys()[k+2]]])[0,1])
-                    if np.isnan(corr[i,j,k,0]):print("v",i,j,k)
-                    if np.isnan(corr[i,j,k,1]):print("a",i,j,k)
+                    #if np.isnan(corr[i,j,k,0]):print("v",i,j,k)
+                    #if np.isnan(corr[i,j,k,1]):print("a",i,j,k)
             except:
                 print("No data for video %s, participant %s"%(i+1, j+1))
     corr_v = np.nanmean(corr[:,:,:,0],axis = 1)
     corr_a = np.nanmean(corr[:,:,:,1],axis = 1)
-    return np.argmax(corr_v, axis=1), np.argmax(corr_a, axis=1)
+    return corr_v, corr_a, np.argmax(corr_v, axis=1), np.argmax(corr_a, axis=1)
     #return the index of the selected features
 
 def a_shift(annotation,p):
@@ -37,7 +39,7 @@ def a_shift(annotation,p):
     return a_s
 
 def annotation_alignment(samples,samples_v):
-    f_v_index, f_a_index = feature_selection(samples,samples_v)
+    corr_v, corr_a, f_v_index, f_a_index = feature_selection(samples,samples_v)
     Data = samples.groupby("VID")
     Data_v = samples_v.groupby("VID")
     a_min = 6;a_max= 33;#6=0.2s, 30=1s
@@ -58,8 +60,8 @@ def annotation_alignment(samples,samples_v):
             print(i,j)
     d = np.nanmean(Dwt,axis = 0)
     shift_v = np.reshape(np.argmin(d[:,:,0],axis=1)+6,[-1,1])
-    shift_a = np.reshape(np.argmin(d[:,:,0],axis=1)+6,[-1,1])
-    return  shift_v,shift_a
+    shift_a = np.reshape(np.argmin(d[:,:,1],axis=1)+6,[-1,1])
+    return  shift_v,shift_a,corr_v,corr_a,f_v_index,f_a_index
     #the shift value (in frames) for valence and arousal for 32 subjects
 
 def alignment_users(samples,shift_v, shift_a):
