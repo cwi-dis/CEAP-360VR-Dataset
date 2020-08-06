@@ -2,10 +2,12 @@ import numpy as np
 from sklearn.cluster import KMeans
 from collections import Counter
 from scipy.cluster.hierarchy import linkage,fcluster
+import VA_util
 
 def hierarchy_clustering(samples,p):
     # p is the percentage of view points for the largest cluster
     Z = linkage(samples, 'ward')
+    #VA_util.draw_hierarchical_clustering(Z)
     n = samples.shape[0]
     max_d = int(max(Z[:,2]))
     min_d = int(min(Z[:,2]))
@@ -13,7 +15,7 @@ def hierarchy_clustering(samples,p):
     while t<=max_d and c<p:
         clusters = fcluster(Z, t, criterion='distance')
         c = Counter(clusters).most_common(1)[0][1]/n
-        t = t+1
+        t = t+0.1
     return clusters,Counter(clusters).most_common(1)[0][0]
     #return the label of cluster and the cluster index of the largest cluster 
     
