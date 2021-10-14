@@ -7,7 +7,10 @@ CEAP-360VR DATASET
 We develop the CEAP-360VR dataset to address the lack of continuously annotated behavioral and physiological datasets for 360 video VR affective computing. Accordingly, this dataset contains a) questionnaires (SSQ, IPQ, NASA-TLX); b) continuous valence-arousal annotations; c) head and eye movements as well as left and right eye pupil diameters while watching videos; d) peripheral physiological responses (ACC, EDA, SKT, BVP, HR, IBI). Our dataset also concludes the data pre-processing, data validating scripts, along with dataset description and key steps in the stage of data acquisition and pre-processing.
 
 ## Dataset Structure
-The roof directory contains the following six subfolders
+The CEAP-360VR Dataset Description.pdf introduces the dataset description and key steps in the stage of data acquisition and pre-processing.
+
+
+The  CEAP-360VR folder contains the following six subfolders
 - 1_Stimuli
 - 2_QuestionnaireData
 - 3_AnnotationData
