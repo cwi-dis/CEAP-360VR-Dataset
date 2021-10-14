@@ -73,6 +73,11 @@ The following is a detailed description of each sub-file:
 		contains scripts to run ML and DL experiments under both  subject-dependent and subject-independent model.
 
 
+
+## Dataset License
+CEAP-360VR dataset is licensed under a Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license (https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+
 ## Usage
 
  1. We have performed the time alignment of different types of data and 
