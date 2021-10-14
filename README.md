@@ -4,7 +4,7 @@ CEAP-360VR DATASET
 **CEAP-360VR: A Continuous Physiological and Behavioral Emotion Annotation Dataset for 360◦ Videos**
 
 ## General Information
-We develop the CEAP-360VR dataset to address the lack of continuously annotated behavioral and physiological datasets for 360 video VR affective computing. Accordingly, this dataset contains a) questionnaires (SSQ, IPQ, NASA-TLX); b) continuous valence-arousal annotations; c) head and eye movements as well as left and right eye pupil diameters while watching videos; d) peripheral physiological responses (ACC, EDA, SKT, BVP, HR, IBI). Our dataset also concludes the data pre-processing and data analysis script. 
+We develop the CEAP-360VR dataset to address the lack of continuously annotated behavioral and physiological datasets for 360 video VR affective computing. Accordingly, this dataset contains a) questionnaires (SSQ, IPQ, NASA-TLX); b) continuous valence-arousal annotations; c) head and eye movements as well as left and right eye pupil diameters while watching videos; d) peripheral physiological responses (ACC, EDA, SKT, BVP, HR, IBI). Our dataset also concludes the data pre-processing, data analysis and baseline experiment script. 
 
 ## Dataset Structure
 The roof directory contains the following six subfolders
@@ -68,6 +68,10 @@ The following is a detailed description of each sub-file:
 	- Data Processed
 		contains scripts that undertake the pre-processing steps for converting the raw data to the transformed/frame data in the transformed and frame folders.
 		conatins scripts for continuous annotation, behavior and physiological data analysis and visualization.
+	- CEAP-360VR_Baseline
+		contains scripts to generate processed behavioral and physiological data with V-A labels for deep learning experiments and features for machine learning experiments.
+		contains scripts to run ML and DL experiments under both  subject-dependent and subject-independent model.
+
 
 ## Usage
 
