@@ -1,5 +1,4 @@
 # CEAP-360VR
-CEAP-360VR DATASET
 
 **CEAP-360VR: A Continuous Physiological and Behavioral Emotion Annotation Dataset for 360◦ Videos**
 
