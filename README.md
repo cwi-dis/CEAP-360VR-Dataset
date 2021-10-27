@@ -93,5 +93,5 @@ CEAP-360VR dataset is licensed under a Creative Commons Attribution-NonCommercia
 The CEAP-360VR Dataset is maintained by Key Laboratory of Digital Performance and Simulation Technology at Beijing Institute of Technology and the Distributed & Interactive Systems (DIS) research group at Centrum Wiskunde & Informatica .
 
 Contact the authors
-	- Tong Xue:		xuetong@bit.edu.cn, xue.tong@cwi.nl
-	- Abdallah El Ali:	abdallah.el.ali@cwi.nl
+- Tong Xue: xuetong@bit.edu.cn, xue.tong@cwi.nl
+- Abdallah El Ali: abdallah.el.ali@cwi.nl
