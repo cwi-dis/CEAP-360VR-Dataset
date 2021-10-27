@@ -72,7 +72,7 @@ The following is a detailed description of each sub-file:
 
 
 ## Dataset Description
-The CEAP-360VR Dataset Description.pdf introduces the dataset description and key steps in the stage of data acquisition and pre-processing.
+The CEAP-360VR Dataset Description.pdf (https://github.com/cwi-dis/CEAP-360VR-Dataset/blob/master/CEAP-Dataset%20Description.pdf) introduces the dataset description and key steps in the stage of data acquisition and pre-processing.
 
 
 ## Dataset License
