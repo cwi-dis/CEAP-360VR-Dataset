@@ -95,7 +95,7 @@ T. Xue, A. El Ali, T. Zhang, G. Ding, and P. Cesar, "CEAP-360VR: A Continuous Ph
   volume={},
   number={},
   pages={1-1},
-  doi={10.1109/TMM.2021.3124080}}
+  doi={https://doi.org/10.1109/TMM.2021.3124080}}
 ```
 
 ## Usage
