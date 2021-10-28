@@ -5,9 +5,12 @@
 We develop the CEAP-360VR dataset (https://www.dis.cwi.nl/ceap-360vr-dataset/) to address the lack of continuously annotated behavioral and physiological datasets for 360 video VR affective computing. Accordingly, this dataset contains a) questionnaires (SSQ, IPQ, NASA-TLX); b) continuous valence-arousal annotations; c) head and eye movements as well as left and right eye pupil diameters while watching videos; d) peripheral physiological responses (ACC, EDA, SKT, BVP, HR, IBI). Our dataset also concludes the data pre-processing, data validating scripts, along with dataset description and key steps in the stage of data acquisition and pre-processing.
 
 - Plain Text
-	T. Xue, A. El Ali, T. Zhang, G. Ding, and P. Cesar, "CEAP-360VR: A Continuous Physiological and Behavioral Emotion Annotation Dataset for 360° Videos," in IEEE Transactions on Multimedia, doi: 10.1109/TMM.2021.3124080.
+```
+T. Xue, A. El Ali, T. Zhang, G. Ding, and P. Cesar, "CEAP-360VR: A Continuous Physiological and Behavioral Emotion Annotation Dataset for 360° Videos," in IEEE Transactions on Multimedia, doi: 10.1109/TMM.2021.3124080.
+```
 - BibTex
-	@ARTICLE{Xue2021CEAP-360VR,
+```
+@ARTICLE{Xue2021CEAP-360VR,
   author={Xue, Tong and Ali, Abdallah El and Zhang, Tianyi and Ding, Gangyi and Cesar, Pablo},
   journal={IEEE Transactions on Multimedia}, 
   title={CEAP-360VR: A Continuous Physiological and Behavioral Emotion Annotation Dataset for 360° Videos}, 
@@ -16,6 +19,7 @@ We develop the CEAP-360VR dataset (https://www.dis.cwi.nl/ceap-360vr-dataset/) t
   number={},
   pages={1-1},
   doi={10.1109/TMM.2021.3124080}}
+```
 
 
 
