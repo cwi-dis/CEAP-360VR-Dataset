@@ -88,12 +88,11 @@ CEAP-360VR dataset is licensed under a [Creative Commons Attribution-NonCommerci
        
  2. For researchers who want to try other data processing methods, you can directly use the raw data.
  3. Please cite our paper in any published work that uses this dataset as follows：
- 	- Plain Text
+- Plain Text
 ```
 T. Xue, A. El Ali, T. Zhang, G. Ding, and P. Cesar, "CEAP-360VR: A Continuous Physiological and Behavioral Emotion Annotation Dataset for 360° Videos," in IEEE Transactions on Multimedia, doi: 10.1109/TMM.2021.3124080.
 ```
-
-	- BibTex
+- BibTex
 ```
 @ARTICLE{Xue2021CEAP-360VR,
   author={Xue, Tong and Ali, Abdallah El and Zhang, Tianyi and Ding, Gangyi and Cesar, Pablo},
