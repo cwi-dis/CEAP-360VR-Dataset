@@ -78,16 +78,9 @@ The CEAP-360VR Dataset [Description.pdf](https://github.com/cwi-dis/CEAP-360VR-D
 ## Dataset License
 CEAP-360VR dataset is licensed under a [Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0) license](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
+## Citation
 
-## Usage
-
- 1. We have performed the time alignment of different types of data and 
-    videos for each participant, as well as the proceesing scripts that 
-    can be used to generate both the transformed and frame data.   
-    Researchers can run their analysis methods on them.
-       
- 2. For researchers who want to try other data processing methods, you can directly use the raw data.
- 3. Please cite our paper in any published work that uses this dataset as follows：
+Please cite our paper in any published work that uses this dataset as follows：
 - Plain Text
 ```
 T. Xue, A. El Ali, T. Zhang, G. Ding, and P. Cesar, "CEAP-360VR: A Continuous Physiological and Behavioral Emotion Annotation Dataset for 360° Videos," in IEEE Transactions on Multimedia, doi: 10.1109/TMM.2021.3124080.
@@ -104,6 +97,15 @@ T. Xue, A. El Ali, T. Zhang, G. Ding, and P. Cesar, "CEAP-360VR: A Continuous Ph
   pages={1-1},
   doi={10.1109/TMM.2021.3124080}}
 ```
+
+## Usage
+
+ 1. We have performed the time alignment of different types of data and 
+    videos for each participant, as well as the proceesing scripts that 
+    can be used to generate both the transformed and frame data.   
+    Researchers can run their analysis methods on them.
+       
+ 2. For researchers who want to try other data processing methods, you can directly use the raw data.
 
 
 ## About 
