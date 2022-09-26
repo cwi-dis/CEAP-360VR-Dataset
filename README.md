@@ -74,17 +74,8 @@ The following is a detailed description of each sub-file:
 ## Dataset Description
 The CEAP-360VR Dataset [Description.pdf](https://github.com/cwi-dis/CEAP-360VR-Dataset/blob/master/CEAP-Dataset%20Description.pdf) introduces the dataset description and key steps in the stage of data acquisition and pre-processing.
 
-## Dataset Plots
-The folder `CEAP-plots/` contains PNG images visualizing all the data from the files in `CEAP-360VR/`. These images could be used as initial screening to decide on the data to use according to the data type group (Annotations, Behavior, Physio) level of preprocessing (Raw, Transformed, Frame), and features. Each image displays subplots per time-series features, video ID, along the 60-sec interval. Examples:
-
-*Frame/Annotations/Participant10/*
-![plot_annotations](./CEAP-plots/Frame/Participant10_Annotations.png)
-
-*Frame/Behavior/Participant20/*
-![plot_behavior](./CEAP-plots/Frame/Participant20_Behavior.png)
-
-*Raw/Physio/Participant30/*
-![plot_physio](./CEAP-plots/Raw/Participant30_Physio.png)
+## Dataset Example Notebook
+The folder [`4_Example Jupyter Notebook/`](./CEAP-360VR/6_Scripts/4_Example%20Jupyter%20Notebook/) contains... `TODO`
 
 
 ## Dataset License
