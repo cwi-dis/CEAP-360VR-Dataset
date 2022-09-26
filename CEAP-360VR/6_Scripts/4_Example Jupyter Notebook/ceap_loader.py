@@ -21,7 +21,8 @@ import os, json
 from copy import deepcopy
 from enum import Enum
 
-# Import scientific 
+# Import scientific
+import numpy as np
 import pandas as pd
 
 # =============================================================================
@@ -351,7 +352,6 @@ class DatasetCEAP():
         return
 
     def _load_json_data_from_filepath(self, path_to_requested_file):
-        
         # Variable to store the dataframe
         df_data = None
 
@@ -408,7 +408,6 @@ class DatasetCEAP():
                     df2 = pd.DataFrame({'TimeStamp': [1.5, 1.65], 'c': [3, 4]})
                     df1.merge(df2, how='outer', on='TimeStamp', sort=True)
                     """
-                
                 # print(f"{ft_group_name} - Size: {df_this_feature.shape}")
                 # print(df_this_feature)
                 # if ft_group_name=="BVP_RawData":
@@ -425,10 +424,45 @@ class DatasetCEAP():
         
         return df_data
 
+
+    def _process_clean_physio(self,
+                            df:pd.DataFrame):
+        """
+        Removes the missing values caused by the IBI feature in physiological data
+        """
+         # Alias name
+        data_postprocessed = df
+
+        # Name of the column containing IBI data (this column will be removed and replaced by R-peaks)
+        ibi_colname = "IBI_IBI"
+
+        # Array with main column names in the dataset. Used to filter main columns in the dataset
+        participant_colname = self.K_PARTICIPANT
+        ts_colname = self.K_TIMESTAMP
+        video_colname = self.K_VIDEO
+        basic_cols = [participant_colname, video_colname, ts_colname]
+        
+        # Remove IBI colnames. 
+        data_postprocessed = data_postprocessed.drop([ibi_colname], axis=1)
+
+        # Identify the non-numeric `basic` colnames from the `data` colnames containing the relevant time-series.
+        # The rows whose `data_colnames` are all NaN will be removed. Because it was a row created by the IBI feature.
+
+        # Difference between sets of colnames
+        data_colnames = set(data_postprocessed.columns).difference(set(basic_cols))
+        # Remove all the rows that are empty, after removing IBI data
+        remaining_data_index = data_postprocessed[data_colnames].dropna(axis=0, how="all").index
+        # New post_processed data should have `1800` samples per time-series (except Video1, which has 1500)
+        data_postprocessed = data_postprocessed.loc[remaining_data_index]
+
+        return data_postprocessed
+    
+
     def load_data_from_participant(self, 
                                 participant_idx:int, 
                                 data_type:str = "Annotations", 
                                 processing_level:str = "Raw",
+                                clean_physio = False,
                                 ):
         """
         Loads the recorded data from a specific participant and a given 
@@ -437,12 +471,19 @@ class DatasetCEAP():
         :param participant_idx: Index of the participant (generally from 1 to 32)
         :param data_type: String denoting the type of data to load:  ["Annotations", "Behavior", "Physio"]
         :param processing_level: String denoting the level of processing to be retrieved: ["Raw", "Transformed", "Frame"]
+        :param clean_physio: Removes IBI feature from Physio to avoid inducing missing values
         :rtype: A single pandas DataFrame with the loaded data
         """
         path_to_requested_file = self.index["data"][data_type][processing_level][str(participant_idx)]
         print("Loading from: ", path_to_requested_file)
 
         df_data = self._load_json_data_from_filepath(path_to_requested_file)
+
+        # Remove IBI and missing rows in case the flag is True
+        if (clean_physio and (processing_level=="Frame") and (data_type=="Physio")):
+            df_data = self._process_clean_physio(df_data)
+
+        # Add metadata
         df_data.insert(0, column="processing_level", value=processing_level)
         df_data.insert(0, column="data_type", value=data_type)
 
@@ -452,61 +493,169 @@ class DatasetCEAP():
         return df_data.copy(deep=True)
 
 
-    def load_data_from_participant(self, 
-                                participant_idx:int, 
-                                data_type:str = "Annotations", 
-                                processing_level:str = "Raw",
-                                ):
-        """
-        Loads the recorded data from a specific participant and a given 
-        experiment session segment.
-        
-        :param participant_idx: Index of the participant (generally from 1 to 32)
-        :param data_type: String denoting the type of data to load:  ["Annotations", "Behavior", "Physio"]
-        :param processing_level: String denoting the level of processing to be retrieved: ["Raw", "Transformed", "Frame"]
-        :rtype: A single pandas DataFrame with the loaded data
-        """
-        path_to_requested_file = self.index["data"][data_type][processing_level][str(participant_idx)]
-        print("Loading from: ", path_to_requested_file)
 
-        df_data = self._load_json_data_from_filepath(path_to_requested_file)
-        df_data.insert(0, column="processing_level", value=processing_level)
-        df_data.insert(0, column="data_type", value=data_type)
+# =============================================================================
+# Processing
+# =============================================================================    
 
-        if(df_data[self.K_PARTICIPANT].iloc[0] != participant_idx):
-            raise ValueError(f"The participant ID is different between the name of the file and the content for file {path_to_requested_file}")
+def _upsample_df_with_interpolation(df, new_timestamps, index_name="TimeStamps"):
+    """
+    Function used to upsample the data corresponding to VideoID=1 
+    from 25Hz to 30Hz, so that it matches the sample frequency of the
+    data in the rest of the videos.
 
-        return df_data.copy(deep=True)
+    Given a dataframe `df`. It upsamples the numeric columns
+    doing linear interpolation based on a function trained on each column.
+    The non-numeric features are replaced by the same value of the 
+    first row in the original df.ParticipantID
+    
+    Returns another pandas DataFrame, with the same columns than the input
+    `df` but the index corresponds to the `new_timestamps`.
+    """
+    import scipy.interpolate
+
+    # Create new dataframe with the resampled version
+    df_resampled = pd.DataFrame(index=pd.Index(new_timestamps, name=index_name), columns=df.columns)
+
+    # Find the numeric columns that can be interpolated
+    cols_numeric = list(df.select_dtypes([np.number]).columns)
+    cols_non_numeric = list(set(df.columns.values).difference(set(cols_numeric)))
+
+    # Non-numeric columns are replaced with the first value in the original dataframe
+    df_resampled[cols_non_numeric] = df[cols_non_numeric].iloc[0,:]
+
+    # Apply interpolation
+    x = df.index.values#.total_seconds().values
+    y = df[cols_numeric].values
+    f_interpolation = scipy.interpolate.interp1d(x,y,axis=0)
+    df_resampled[cols_numeric] = f_interpolation(new_timestamps)
+    return df_resampled
+
+def resample_dataframes_from_video1(df, ts_colname="TimeStamps"):
+
+    df_ceap = df
+    # After removing IBI, all arrays have 1800 samples
+    df_filtered_single_ts = df_ceap[ (df_ceap.VideoID == 5) # Do not use VideoID=1 here!
+                        & (df_ceap.ParticipantID == 1)
+                        & (df_ceap.data_type == "Physio") ]
+    
+    # Extract a reference TimeStamp array to be used in the resampled version of VideoID=1
+    timestamps_reference = df_filtered_single_ts.set_index(ts_colname).dropna(axis=1, how="all")
+    timestamps_reference = timestamps_reference.index.values
+
+    # Subset of data with values 1 and remove it from original dataset
+    data_video_1 = df_ceap[ df_ceap.VideoID ==1 ].copy(deep=True)
+    # print(f"Size data video 1:{data_video_1.shape}")
+
+    # Delete from main dataset, we will input new values with proper resampling.
+    df_ceap = df_ceap[ df_ceap.VideoID != 1 ]
+    # print(f"Size after removing video 1:{df_ceap.shape}")
+
+    # New dataframe for video 1
+    data_video_1_resampled = None
+
+    # Extract each time series (per participant, and per data group)
+    for pid in data_video_1.ParticipantID.unique():
+        for dgroup in data_video_1.data_type.unique():
+
+            Q = ( (data_video_1.ParticipantID == pid) 
+                    & (data_video_1.data_type == dgroup) )
+            df_filter = data_video_1[ Q ]
+
+            # Define timestamps as the index, and delete 
+            # columns that are not relevant to the datagroup
+            df_filter.set_index(ts_colname, inplace=True)
+            df_filter.dropna(axis=1, how="all", inplace=True)
+
+            # Resample the df_filter with the same timestamps than the reference.
+            df_resampled = _upsample_df_with_interpolation(df_filter, timestamps_reference, index_name=df_filter.index.name)
+            df_resampled.reset_index(inplace=True)
+
+            data_video_1_resampled = df_resampled if (data_video_1_resampled is None) else pd.concat([data_video_1_resampled, df_resampled], axis=0, ignore_index=True)
+            # print(f"Original = {df_filter.shape} - Resampled = {df_resampled.shape}")
+            # break
+        # break
+    # print(f"Size data video 1 resampled: {data_video_1_resampled.shape}\n\tEnd")
+
+    df_ceap = pd.concat([df_ceap, data_video_1_resampled], axis=0, ignore_index=True)
+
+    return df_ceap
 
 
+
+# =============================================================================
+# Visualization
+# =============================================================================    
+
+def plot_all_data_from_participant(df, time_colname="TimeStamp", y_colname="VideoID"):
+
+    """
+    This function plots a single dataframe from the CEAP dataset.
+    `df` is the result of applying the function `load_data_from_participant()`.
+
+    A single file from the dataset contains many features, which may be sampled
+    at different frequencies. This function takes a large dataset and creates a
+    subplot (timeStamp, videoId) to generate a plot with the loaded data
+    """
+
+    import matplotlib.pyplot as plt
+
+    # Get the numeric columns and delete the `index_colname` to make it index later
+    cols = list(df.select_dtypes([np.number]).columns)
+    if time_colname not in cols: raise ValueError(f"The dataframe does not contain numeric columns for the index x_colname={time_colname}")
+    if y_colname not in df.columns: raise ValueError(f"The dataframe does not contain column with y_colname={y_colname}")
+    cols.remove(time_colname)
+    if y_colname in cols: cols.remove(y_colname)
+
+    NUM_ROWS = len(cols)
+    colnames_labels = df[y_colname].unique()
+    NUM_COLS = len(colnames_labels)
+
+    cmap = plt.cm.get_cmap("tab20")
+    fig,axes = plt.subplots(NUM_ROWS, NUM_COLS, sharex=True, figsize=(6*NUM_COLS, 2*NUM_ROWS))
+    for i in range(NUM_ROWS):
+        for j in range(NUM_COLS):
+            ax = axes[i,j]
+
+            # Filter the data that has to do with this column label
+            df_ax = df[ df[y_colname] == colnames_labels[j] ]
+            df_ax = df_ax[[time_colname, cols[i]]].set_index(time_colname).dropna(axis=0)
+            timestamps = df_ax.index.values
+            data = df_ax[cols[i]].values
+            ax.plot(timestamps, data, label=cols[i], color=cmap.colors[i] )
+            if(i==0): ax.set_title(f"{y_colname}: {colnames_labels[j]}") # Suptitles for first row
+            if(j==0): ax.set_ylabel(cols[i])    # Xlabel for first column
+            if(i==NUM_ROWS-1): ax.set_xlabel(time_colname)
+    plt.tight_layout()
+    return
 
 ############################
 #### ENTRY POINT
 ############################
 
-import sys, argparse
+import argparse
 
 def help():
     m = f"""
-        Experiment execution with dataset ''
-        Parameters:
-            
+        CEAP Loader. See the example Jupyter notebook to understand
+        the functionalities of this file.
         """
-    # print(m)
-    return m
+    print(m)
+    return
 
 def main(args):
-    input_folder_path = args.datasetroot 
-    print(f"Analyzing folder {input_folder_path}")
+    try:
+        if(args.datasetroot):
+            print(f"Analyzing folder {args.datasetroot}")
+            DatasetCEAP(args.datasetroot)
+    except:
+        help()
     return
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("-p","--datasetroot", type=str, required=True, help=f"Path to the dataset EMTEQ")
+    parser.add_argument("-p","--datasetroot", type=str, required=True, help=f"Path to the dataset")
 
-    # args = parser.parse_args()
-    # main(args)
-
-    print(" >>>> TESTING MANUALLY")
-    data_loader_etl2 = DatasetCEAP(os.path.join(THIS_PATH,"../../datasets/CEAP-360VR/"))
+    args = parser.parse_args()
+    main(args)
 
