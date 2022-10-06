@@ -69,6 +69,8 @@ The following is a detailed description of each sub-file:
 	- CEAP-360VR_Baseline
 		contains scripts to generate processed behavioral and physiological data with V-A labels for deep learning experiments and features for machine learning experiments.
 		contains scripts to run ML and DL experiments under both  subject-dependent and subject-independent model.
+	- Example Jupyter Notebook
+		contains an example on how to load the dataset as pandas DataFrames depending on the participant id, data types, and processing level. Also, code to load the whole dataset in a single dataframe with synced timestamps @30Hz, without missing values and with target class labels to be used in classification tasks.
 
 
 ## Dataset Description
