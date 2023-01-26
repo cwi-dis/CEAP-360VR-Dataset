@@ -258,6 +258,7 @@ class DatasetCEAP():
                 video_info_df[k].append(v)
         
         video_info_df = pd.DataFrame(video_info_df)
+
         # Save to CSV file
         filepath_temp = os.path.join(self.folder_data_path, self.VIDEO_INFO_FILENAME)
         video_info_df.to_csv(filepath_temp, index=False)
@@ -458,11 +459,104 @@ class DatasetCEAP():
         return data_postprocessed
     
 
+    def __estimate_pupil_response_caused_by_luminance(self, pupil_response:np.array, luminance:np.array):
+        """
+        Returns an array with the estimated pupil diameter response
+        dependent on the luminance changes in a video.
+
+        Based on discussion in section 4 from DOI: 10.1155/2020/2909267
+        Eye-Tracking Analysis for Emotion Recognition
+        """
+
+        y = pupil_response
+        x = luminance
+
+        min_samples = np.min([y.size, x.size])
+        y = y[:min_samples]
+        x = x[:min_samples]
+
+        # Arrange dimensions
+        if x.ndim == 1:
+            x = np.ones( (luminance.size, 2) )
+            x[:,0] = luminance
+
+        if y.ndim == 1:
+            y = y.reshape(-1,1)
+
+        # Solution of linear model
+        y_solution = np.linalg.lstsq(x, y, rcond=None)
+
+        # Calculate PD given the luminance
+        coeffs = y_solution[0]  # Coefficients (b0, b1,...)
+
+        # Estimated pupil diameter given the luminance
+        y_est = np.matmul(x, coeffs)
+
+        return y_est
+
+
+    def _process_clean_pupil_diameter(self, df_data):
+        """
+        Normalizes the pupil diameter data based on the
+        average luminance from the stimuli.
+        This preprocessing step requires the file `VideoLuminance.csv`
+        that can be generated from the notebook `ceap_calculate_video_luminance.ipynb`.
+        """
+        video_luminance_path = os.path.join(self.folder_data_path, str(DataFoldersCEAP.Stimuli), "VideoLuminance"+self.DATA_FILE_EXTENSION)
+
+        if not os.path.isfile(video_luminance_path):
+            print("WARNING!! The video luminance data cannot be loaded, please check the documentation of this function")
+            return
+        
+        ## Process luminance
+        PD_AVG_COLNAME = "PD_avg"
+        PD_FROM_LUMINANCE_COLNAME = "PD_est"
+        PD_RESIDUAL_COLNAME = "PD_corrected"
+
+        results_luminance = pd.read_csv(video_luminance_path,index_col=0)
+
+        PD_cols = ["LPD_PD", "RPD_PD"]
+        df_data["PD_avg"] = df_data[PD_cols].mean(axis=1)
+        
+        # Detect how many videoIds are in the dataframe
+        videos_ids = df_data["VideoID"].unique()
+        videos_ids_str = [ f"V{i}" for i in videos_ids ]    # The luminance is in a column format "V1","V2","V3"...
+
+        for i,v in enumerate(videos_ids):
+            VIDEO_LUMINANCE_COLNAME = videos_ids_str[i]
+
+            df_pd_participant_in_video = df_data.loc[ (df_data["VideoID"] == videos_ids[i]), PD_AVG_COLNAME ]
+            df_pd_participant_in_video = df_pd_participant_in_video.reset_index().drop(["index"],axis=1)
+            # print(f"{videos_ids_str[i]} {df_pd_participant_in_video.shape} {df_pd_participant_in_video.isna().sum()}")
+
+            df_luminance_in_video = results_luminance[ VIDEO_LUMINANCE_COLNAME ].dropna()
+            # print(f"{videos_ids_str[i]} {df_luminance_in_video.shape} {df_luminance_in_video.isna().sum()}")
+
+            ###### Match both to the minimum samples
+            df_pd_combined = pd.merge(df_pd_participant_in_video, df_luminance_in_video, left_index=True, right_index=True, how="left")
+            df_pd_combined = df_pd_combined.fillna(method="ffill") # In case there are few missing values vs. what was writtenin VideoInfo.json
+
+            # Estimate the linear relationship due to luminance
+            est_pupil_response = self.__estimate_pupil_response_caused_by_luminance(df_pd_combined[ PD_AVG_COLNAME ].values,
+                                                                                df_pd_combined[ VIDEO_LUMINANCE_COLNAME ].values)
+            df_pd_adjusted = pd.DataFrame(data=est_pupil_response, columns=[ PD_FROM_LUMINANCE_COLNAME ])
+            df_pd_combined = df_pd_combined.join(df_pd_adjusted)
+
+            # Residual response not caused by videos' luminance
+            df_pd_combined[ PD_RESIDUAL_COLNAME ] = df_pd_combined[ PD_AVG_COLNAME ] - df_pd_combined[ PD_FROM_LUMINANCE_COLNAME ]
+
+            ### Add to final data
+            df_data.loc[ df_data["VideoID"]==v, PD_RESIDUAL_COLNAME ] = df_pd_combined[PD_RESIDUAL_COLNAME].values
+        
+        return df_data
+
+
     def load_data_from_participant(self, 
                                 participant_idx:int, 
                                 data_type:str = "Annotations", 
                                 processing_level:str = "Raw",
                                 clean_physio = False,
+                                clean_pd_with_luminance = False,
                                 ):
         """
         Loads the recorded data from a specific participant and a given 
@@ -482,6 +576,9 @@ class DatasetCEAP():
         # Remove IBI and missing rows in case the flag is True
         if (clean_physio and (processing_level=="Frame") and (data_type=="Physio")):
             df_data = self._process_clean_physio(df_data)
+
+        if (clean_pd_with_luminance and (processing_level=="Frame") and (data_type=="Behavior")):
+            df_data = self._process_clean_pupil_diameter(df_data)
 
         # Add metadata
         df_data.insert(0, column="processing_level", value=processing_level)
