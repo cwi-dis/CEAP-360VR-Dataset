@@ -1,3 +1,6 @@
+CEAP-360VR/1_Stimuli/Videos/*
+!CEAP-360VR/1_Stimuli/Videos/README.md
+
 CEAP-360VR/data_tree_index.json
 CEAP-360VR/demographics_info_summary.csv
 CEAP-360VR/video_info_summary.csv
