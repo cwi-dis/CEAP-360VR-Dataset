@@ -452,7 +452,7 @@ class DatasetCEAP():
         # Difference between sets of colnames
         data_colnames = set(data_postprocessed.columns).difference(set(basic_cols))
         # Remove all the rows that are empty, after removing IBI data
-        remaining_data_index = data_postprocessed[data_colnames].dropna(axis=0, how="all").index
+        remaining_data_index = data_postprocessed[list(data_colnames)].dropna(axis=0, how="all").index
         # New post_processed data should have `1800` samples per time-series (except Video1, which has 1500)
         data_postprocessed = data_postprocessed.loc[remaining_data_index]
 
